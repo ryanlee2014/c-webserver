@@ -2,5 +2,6 @@ cmake_minimum_required(VERSION 3.12)
 project(webserver)
 
 set(CMAKE_CXX_STANDARD 17)
-
+set(CMAKE_C_COMPILER /usr/local/bin/gcc-8)
+set(CMAKE_CXX_COMPILER /usr/local/bin/g++-8)
 add_executable(webserver main.cpp static/static_const.h)

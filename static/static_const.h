@@ -1,10 +1,15 @@
 //
 // Created by Ryan on 2018/9/8.
 //
-
+#include <string.h>
 #ifndef WEBSERVER_STATIC_CONST_H
 #define WEBSERVER_STATIC_CONST_H
-
+#define VERSION 1
+#define BUFSIZE 8096
+#define ERROR      42
+#define LOG        44
+#define FORBIDDEN 403
+#define NOTFOUND  404
 struct {
     char *ext;
     char *filetype;

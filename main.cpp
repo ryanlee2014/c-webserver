@@ -11,25 +11,40 @@
 #include <arpa/inet.h>
 #include <sys/stat.h>
 #include <string>
+#include <sys/time.h>
 #include "static/static_const.h"
+#include <iostream>
+#include <string>
+#include <semaphore.h>
+#include <netinet/in.h>
+#include <arpa/inet.h>
+#include <signal.h>
+#include <sys/mman.h>
 
-#define VERSION 1
-#define BUFSIZE 8096
-#define ERROR      42
-#define LOG        44
-#define FORBIDDEN 403
-#define NOTFOUND  404
+using std::string;
+using std::cin;
+using std::cout;
+using std::cerr;
+using std::to_string;
 
 #ifndef SIGCLD
 #   define SIGCLD SIGCHLD
 #endif
 
 
-
-
-void logger(int type, char *s1, char *s2, int socket_fd) {
+void logger(int type, const char *s1, const char *s2, int socket_fd) {
     int fd;
     char logbuffer[BUFSIZE * 2];
+    char time_stamp[BUFSIZE << 1];
+    struct tm *current_time = NULL;
+    time_t tt;
+    time(&tt);
+    current_time = localtime(&tt);
+    current_time->tm_year += 1900;
+    current_time->tm_mon += 1;
+    sprintf(time_stamp, "%d.%d.%d-%d:%d:%d\n", current_time->tm_year, current_time->tm_mon, current_time->tm_mday,
+            current_time->tm_hour, current_time->tm_min, current_time->tm_sec);
+
 
     switch (type) {
         case ERROR:
@@ -52,7 +67,9 @@ void logger(int type, char *s1, char *s2, int socket_fd) {
             break;
     }
     /* No checks here, nothing can be done with a failure anyway */
-    if ((fd = open("nweb.log", O_CREAT | O_WRONLY | O_APPEND, 0644)) >= 0) {
+    if ((fd = open("/Users/ryan/CLionProjects/webserver/nweb.log", O_CREAT | O_WRONLY | O_APPEND, 0644)) >= 0) {
+        write(fd, time_stamp, strlen(time_stamp));
+        write(fd, "\n", 1);
         (void) write(fd, logbuffer, strlen(logbuffer));
         (void) write(fd, "\n", 1);
         (void) close(fd);
@@ -62,12 +79,19 @@ void logger(int type, char *s1, char *s2, int socket_fd) {
 
 /* this is a child web server process, so we can exit on errors */
 void web(int fd, int hit) {
+    struct timeval start, end;
+    long timeuse = 0;
     int j, file_fd, buflen;
     long i, ret, len;
     char *fstr;
     static char buffer[BUFSIZE + 1]; /* static so zero filled */
+    gettimeofday(&start, NULL);
 
     ret = read(fd, buffer, BUFSIZE);   /* read Web request in one go */
+    gettimeofday(&end, NULL);
+    timeuse = 1000000 * (end.tv_sec - start.tv_sec) + end.tv_usec - start.tv_usec;  //微秒级别
+    string log = "read function total Run:" + to_string(timeuse) + "microseconds.\n";
+    logger(LOG, "Time", log.c_str(), hit);
     if (ret == 0 || ret == -1) {  /* read failure stop now */
         logger(FORBIDDEN, "failed to read browser request", "", fd);
     }
@@ -117,15 +141,18 @@ void web(int fd, int hit) {
                    "HTTP/1.1 200 OK\nServer: Rypers/%d.0\nContent-Length: %ld\nConnection: close\nContent-Type: %s\n\n",
                    VERSION, len, fstr); /* Header + a blank line */
     logger(LOG, "Header", buffer, hit);
+    gettimeofday(&start, NULL);
     (void) write(fd, buffer, strlen(buffer));
 
     /* send file in 8KB block - last block may be smaller */
     while ((ret = read(file_fd, buffer, BUFSIZE)) > 0) {
         (void) write(fd, buffer, ret);
     }
-    sleep(1);  /* allow socket to drain before signalling the socket is closed */
+    gettimeofday(&end, NULL);
+    timeuse = 1000000 * (end.tv_sec - start.tv_sec) + end.tv_usec - start.tv_usec;  //微秒级别
+    log = "write function total Run:" + to_string(timeuse) + "microseconds.\n";
+    logger(LOG, "Time", log.c_str(), hit);
     close(fd);
-    exit(1);
 }
 
 
@@ -134,7 +161,6 @@ int main(int argc, char **argv) {
     socklen_t length;
     static struct sockaddr_in cli_addr; /* static = initialised to zeros */
     static struct sockaddr_in serv_addr; /* static = initialised to zeros */
-
     valid_check(argc, argv);
     /* Become deamon + unstopable and no zombies children (= no wait()) */
     if (fork() != 0)
@@ -158,16 +184,71 @@ int main(int argc, char **argv) {
         logger(ERROR, "system call", "bind", 0);
     if (listen(listenfd, 64) < 0)
         logger(ERROR, "system call", "listen", 0);
+    //shared
+    sem_t* psem;
+    if((psem=sem_open("sem_example",O_CREAT,0666,1))==SEM_FAILED)
+    {
+        perror("create semaphore error");
+        exit(1);
+    }
+    int shm_fd;
+    if((shm_fd=shm_open("mmap_example",O_RDWR|O_CREAT,0666))<0)
+    {
+        perror("create shared memory object error");
+        exit(1);
+    }
+    ftruncate(shm_fd,sizeof(clock_t));
+    void* memPtr=mmap(NULL,sizeof(clock_t),PROT_READ|PROT_WRITE,MAP_SHARED,shm_fd,0);
+    if (memPtr==MAP_FAILED)
+    {
+        perror("create mmap error");
+        exit(1);
+    }
+    *(clock_t*)memPtr=0;
+    //end shared
+    struct timeval start, end;
+    long timeuse = 0;
     for (hit = 1;; ++hit) {
         length = sizeof(cli_addr);
+        gettimeofday(&start, NULL);
         if ((socketfd = accept(listenfd, (struct sockaddr *) &cli_addr, &length)) < 0)
             logger(ERROR, "system call", "accept", 0);
-        if ((pid = fork()) < 0) {
+        gettimeofday(&end, NULL);
+        timeuse = 1000000 * (end.tv_sec - start.tv_sec) + end.tv_usec - start.tv_usec;  //微秒级别
+        string log = "Accept function total Run:" + to_string(timeuse) + "microseconds.\n";
+        logger(LOG, "Time", log.c_str(), hit);
+        gettimeofday(&start, NULL);
+        pid = fork();
+        gettimeofday(&end,NULL);
+        timeuse = 1000000 * (end.tv_sec - start.tv_sec) + end.tv_usec - start.tv_usec;  //微秒级别
+        log = "fork functrion total Run:" + to_string(timeuse) + "microseconds.\n";
+        logger(LOG, "Time", log.c_str(), hit);
+        if (pid < 0) {
             logger(ERROR, "system call", "fork", 0);
         } else {
             if (pid == 0) {   /* child */
+                auto mstart = clock();
                 (void) close(listenfd);
+                gettimeofday(&start, NULL);
                 web(socketfd, hit); /* never returns */
+                auto mfinish = clock();
+                sem_wait(psem);
+                *(clock_t*)memPtr = (*(clock_t*)memPtr) + mfinish - mstart;
+                sem_post(psem);
+                gettimeofday(&end, NULL);
+                timeuse = 1000000 * (end.tv_sec - start.tv_sec) + end.tv_usec - start.tv_usec;  //微秒级别
+                log = "Web total Run:" + to_string(timeuse) + "microseconds.\n";
+                logger(LOG, "Time", log.c_str(), hit);
+                char childbuffer[BUFSIZE * 4];
+                int fdd;
+                (void)sprintf(childbuffer,"Child timing%f seconds\nChild total timing:%f seconds\n",(double)(mfinish-mstart)/\
+                CLOCKS_PER_SEC,(double)(*(clock_t*)memPtr)/CLOCKS_PER_SEC);
+                if ((fdd=open("/Users/ryan/CLionProjects/webserver/time.log",O_CREAT|O_WRONLY|O_APPEND,0644))>=0){
+                    (void)write(fdd,childbuffer,strlen(childbuffer));
+                    (void)write(fdd,"\n",1);
+                    (void)close(fdd);
+                }
+                exit(0);
             } else {   /* parent */
                 (void) close(socketfd);
             }
