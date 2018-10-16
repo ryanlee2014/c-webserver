@@ -1,0 +1,3153 @@
+2018.9.25-22:26:59
+
+ INFO: WebServer starting:8080:32615
+2018.9.25-22:27:3
+
+ INFO: Time:Accept function total Run:4489061microseconds.
+:1
+2018.9.25-22:27:3
+
+ INFO: Time:fork functrion total Run:1032microseconds.
+:1
+2018.9.25-22:27:3
+
+ INFO: Time:Accept function total Run:17microseconds.
+:2
+2018.9.25-22:27:3
+
+ INFO: Time:fork functrion total Run:349microseconds.
+:2
+2018.9.25-22:27:3
+
+ INFO: Time:fork functrion total Run:1890microseconds.
+:1
+2018.9.25-22:27:3
+
+ INFO: Time:fork functrion total Run:565microseconds.
+:2
+2018.9.25-22:27:3
+
+ INFO: Time:read function total Run:57microseconds.
+:1
+2018.9.25-22:27:3
+
+ INFO: request:GET / HTTP/1.1**Host: 127.0.0.1:8080**Connection: keep-alive**Cache-Control: max-age=0**Upgrade-Insecure-Requests: 1**User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36**Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8**Accept-Encoding: gzip, deflate, br**Accept-Language: zh-CN,zh;q=0.9,ja;q=0.8,en-US;q=0.7,en;q=0.6****:1
+2018.9.25-22:27:3
+
+ INFO: SEND:index.html:1
+2018.9.25-22:27:3
+
+ INFO: Header:HTTP/1.1 200 OK
+Server: Rypers/1.0
+Content-Length: 311
+Connection: close
+Content-Type: text/html
+
+:1
+2018.9.25-22:27:3
+
+ INFO: Time:write function total Run:198microseconds.
+:1
+2018.9.25-22:27:3
+
+ INFO: Time:read function total Run:51343microseconds.
+:2
+2018.9.25-22:27:3
+
+ INFO: request:GET /example.jpg HTTP/1.1**Host: 127.0.0.1:8080**Connection: keep-alive**User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36**Accept: image/webp,image/apng,image/*,*/*;q=0.8**Referer: http://127.0.0.1:8080/**Accept-Encoding: gzip, deflate, br**Accept-Language: zh-CN,zh;q=0.9,ja;q=0.8,en-US;q=0.7,en;q=0.6****:2
+2018.9.25-22:27:3
+
+ INFO: SEND:example.jpg:2
+2018.9.25-22:27:3
+
+ INFO: Header:HTTP/1.1 200 OK
+Server: Rypers/1.0
+Content-Length: 1249334
+Connection: close
+Content-Type: image/jpg
+
+:2
+2018.9.25-22:27:3
+
+ INFO: Time:write function total Run:37266microseconds.
+:2
+2018.9.25-22:29:29
+
+ INFO: Time:Accept function total Run:146007411microseconds.
+:3
+2018.9.25-22:29:29
+
+ INFO: Time:fork functrion total Run:369microseconds.
+:3
+2018.9.25-22:29:29
+
+ INFO: Time:Accept function total Run:36microseconds.
+:4
+2018.9.25-22:29:29
+
+ INFO: Time:fork functrion total Run:240microseconds.
+:4
+2018.9.25-22:29:29
+
+ INFO: Time:fork functrion total Run:681microseconds.
+:3
+2018.9.25-22:29:29
+
+ INFO: Time:fork functrion total Run:518microseconds.
+:4
+2018.9.25-22:29:29
+
+ INFO: Time:read function total Run:1881microseconds.
+:3
+2018.9.25-22:29:29
+
+ INFO: request:GET / HTTP/1.1**Host: 127.0.0.1:8080**Connection: keep-alive**Cache-Control: max-age=0**Upgrade-Insecure-Requests: 1**User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36**Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8**Accept-Encoding: gzip, deflate, br**Accept-Language: zh-CN,zh;q=0.9,ja;q=0.8,en-US;q=0.7,en;q=0.6****:3
+2018.9.25-22:29:29
+
+ INFO: SEND:index.html:3
+2018.9.25-22:29:29
+
+ INFO: Header:HTTP/1.1 200 OK
+Server: Rypers/1.0
+Content-Length: 311
+Connection: close
+Content-Type: text/html
+
+:3
+2018.9.25-22:29:29
+
+ INFO: Time:write function total Run:349microseconds.
+:3
+2018.9.25-22:29:29
+
+ INFO: Time:read function total Run:39396microseconds.
+:4
+2018.9.25-22:29:29
+
+ INFO: request:GET /example.jpg HTTP/1.1**Host: 127.0.0.1:8080**Connection: keep-alive**User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36**Accept: image/webp,image/apng,image/*,*/*;q=0.8**Referer: http://127.0.0.1:8080/**Accept-Encoding: gzip, deflate, br**Accept-Language: zh-CN,zh;q=0.9,ja;q=0.8,en-US;q=0.7,en;q=0.6****:4
+2018.9.25-22:29:29
+
+ INFO: SEND:example.jpg:4
+2018.9.25-22:29:29
+
+ INFO: Header:HTTP/1.1 200 OK
+Server: Rypers/1.0
+Content-Length: 1249334
+Connection: close
+Content-Type: image/jpg
+
+:4
+2018.9.25-22:29:29
+
+ INFO: Time:write function total Run:21629microseconds.
+:4
+2018.9.25-22:29:30
+
+ INFO: Time:Accept function total Run:322410microseconds.
+:5
+2018.9.25-22:29:30
+
+ INFO: Time:fork functrion total Run:274microseconds.
+:5
+2018.9.25-22:29:30
+
+ INFO: Time:Accept function total Run:13microseconds.
+:6
+2018.9.25-22:29:30
+
+ INFO: Time:fork functrion total Run:524microseconds.
+:5
+2018.9.25-22:29:30
+
+ INFO: Time:fork functrion total Run:173microseconds.
+:6
+2018.9.25-22:29:30
+
+ INFO: Time:fork functrion total Run:559microseconds.
+:6
+2018.9.25-22:29:30
+
+ INFO: Time:read function total Run:818microseconds.
+:5
+2018.9.25-22:29:30
+
+ INFO: request:GET / HTTP/1.1**Host: 127.0.0.1:8080**Connection: keep-alive**Cache-Control: max-age=0**Upgrade-Insecure-Requests: 1**User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36**Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8**Accept-Encoding: gzip, deflate, br**Accept-Language: zh-CN,zh;q=0.9,ja;q=0.8,en-US;q=0.7,en;q=0.6****:5
+2018.9.25-22:29:30
+
+ INFO: SEND:index.html:5
+2018.9.25-22:29:30
+
+ INFO: Header:HTTP/1.1 200 OK
+Server: Rypers/1.0
+Content-Length: 311
+Connection: close
+Content-Type: text/html
+
+:5
+2018.9.25-22:29:30
+
+ INFO: Time:write function total Run:16microseconds.
+:5
+2018.9.25-22:29:30
+
+ INFO: Time:read function total Run:28781microseconds.
+:6
+2018.9.25-22:29:30
+
+ INFO: request:GET /example.jpg HTTP/1.1**Host: 127.0.0.1:8080**Connection: keep-alive**User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36**Accept: image/webp,image/apng,image/*,*/*;q=0.8**Referer: http://127.0.0.1:8080/**Accept-Encoding: gzip, deflate, br**Accept-Language: zh-CN,zh;q=0.9,ja;q=0.8,en-US;q=0.7,en;q=0.6****:6
+2018.9.25-22:29:30
+
+ INFO: SEND:example.jpg:6
+2018.9.25-22:29:30
+
+ INFO: Header:HTTP/1.1 200 OK
+Server: Rypers/1.0
+Content-Length: 1249334
+Connection: close
+Content-Type: image/jpg
+
+:6
+2018.9.25-22:29:30
+
+ INFO: Time:write function total Run:33393microseconds.
+:6
+2018.9.25-22:29:30
+
+ INFO: Time:Accept function total Run:294414microseconds.
+:7
+2018.9.25-22:29:30
+
+ INFO: Time:fork functrion total Run:262microseconds.
+:7
+2018.9.25-22:29:30
+
+ INFO: Time:Accept function total Run:13microseconds.
+:8
+2018.9.25-22:29:30
+
+ INFO: Time:fork functrion total Run:499microseconds.
+:7
+2018.9.25-22:29:30
+
+ INFO: Time:fork functrion total Run:171microseconds.
+:8
+2018.9.25-22:29:30
+
+ INFO: Time:fork functrion total Run:529microseconds.
+:8
+2018.9.25-22:29:30
+
+ INFO: Time:read function total Run:807microseconds.
+:7
+2018.9.25-22:29:30
+
+ INFO: request:GET / HTTP/1.1**Host: 127.0.0.1:8080**Connection: keep-alive**Cache-Control: max-age=0**Upgrade-Insecure-Requests: 1**User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36**Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8**Accept-Encoding: gzip, deflate, br**Accept-Language: zh-CN,zh;q=0.9,ja;q=0.8,en-US;q=0.7,en;q=0.6****:7
+2018.9.25-22:29:30
+
+ INFO: SEND:index.html:7
+2018.9.25-22:29:30
+
+ INFO: Header:HTTP/1.1 200 OK
+Server: Rypers/1.0
+Content-Length: 311
+Connection: close
+Content-Type: text/html
+
+:7
+2018.9.25-22:29:30
+
+ INFO: Time:write function total Run:20microseconds.
+:7
+2018.9.25-22:29:30
+
+ INFO: Time:read function total Run:36251microseconds.
+:8
+2018.9.25-22:29:30
+
+ INFO: request:GET /example.jpg HTTP/1.1**Host: 127.0.0.1:8080**Connection: keep-alive**User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36**Accept: image/webp,image/apng,image/*,*/*;q=0.8**Referer: http://127.0.0.1:8080/**Accept-Encoding: gzip, deflate, br**Accept-Language: zh-CN,zh;q=0.9,ja;q=0.8,en-US;q=0.7,en;q=0.6****:8
+2018.9.25-22:29:30
+
+ INFO: SEND:example.jpg:8
+2018.9.25-22:29:30
+
+ INFO: Header:HTTP/1.1 200 OK
+Server: Rypers/1.0
+Content-Length: 1249334
+Connection: close
+Content-Type: image/jpg
+
+:8
+2018.9.25-22:29:30
+
+ INFO: Time:write function total Run:44363microseconds.
+:8
+2018.9.25-22:29:30
+
+ INFO: Time:Accept function total Run:295558microseconds.
+:9
+2018.9.25-22:29:30
+
+ INFO: Time:fork functrion total Run:1643microseconds.
+:9
+2018.9.25-22:29:30
+
+ INFO: Time:Accept function total Run:23microseconds.
+:10
+2018.9.25-22:29:30
+
+ INFO: Time:fork functrion total Run:2159microseconds.
+:9
+2018.9.25-22:29:30
+
+ INFO: Time:read function total Run:342microseconds.
+:9
+2018.9.25-22:29:30
+
+ INFO: request:GET / HTTP/1.1**Host: 127.0.0.1:8080**Connection: keep-alive**Cache-Control: max-age=0**Upgrade-Insecure-Requests: 1**User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36**Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8**Accept-Encoding: gzip, deflate, br**Accept-Language: zh-CN,zh;q=0.9,ja;q=0.8,en-US;q=0.7,en;q=0.6****:9
+2018.9.25-22:29:30
+
+ INFO: Time:fork functrion total Run:658microseconds.
+:10
+2018.9.25-22:29:30
+
+2018.9.25-22:29:30
+
+ INFO: SEND:index.html:9
+ INFO: Time:fork functrion total Run:872microseconds.
+:10
+2018.9.25-22:29:30
+
+ INFO: Header:HTTP/1.1 200 OK
+Server: Rypers/1.0
+Content-Length: 311
+Connection: close
+Content-Type: text/html
+
+:9
+2018.9.25-22:29:30
+
+ INFO: Time:write function total Run:73microseconds.
+:9
+2018.9.25-22:29:30
+
+ INFO: Time:read function total Run:27753microseconds.
+:10
+2018.9.25-22:29:30
+
+ INFO: request:GET /example.jpg HTTP/1.1**Host: 127.0.0.1:8080**Connection: keep-alive**User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36**Accept: image/webp,image/apng,image/*,*/*;q=0.8**Referer: http://127.0.0.1:8080/**Accept-Encoding: gzip, deflate, br**Accept-Language: zh-CN,zh;q=0.9,ja;q=0.8,en-US;q=0.7,en;q=0.6****:10
+2018.9.25-22:29:30
+
+ INFO: SEND:example.jpg:10
+2018.9.25-22:29:30
+
+ INFO: Header:HTTP/1.1 200 OK
+Server: Rypers/1.0
+Content-Length: 1249334
+Connection: close
+Content-Type: image/jpg
+
+:10
+2018.9.25-22:29:30
+
+ INFO: Time:write function total Run:28171microseconds.
+:10
+2018.9.25-22:29:30
+
+ INFO: Time:Accept function total Run:275755microseconds.
+:11
+2018.9.25-22:29:30
+
+ INFO: Time:fork functrion total Run:374microseconds.
+:11
+2018.9.25-22:29:30
+
+ INFO: Time:Accept function total Run:18microseconds.
+:12
+2018.9.25-22:29:30
+
+ INFO: Time:fork functrion total Run:774microseconds.
+:11
+2018.9.25-22:29:30
+
+ INFO: Time:fork functrion total Run:476microseconds.
+:12
+2018.9.25-22:29:30
+
+ INFO: Time:fork functrion total Run:715microseconds.
+:12
+2018.9.25-22:29:30
+
+ INFO: Time:read function total Run:2239microseconds.
+:11
+2018.9.25-22:29:30
+
+ INFO: request:GET / HTTP/1.1**Host: 127.0.0.1:8080**Connection: keep-alive**Cache-Control: max-age=0**Upgrade-Insecure-Requests: 1**User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36**Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8**Accept-Encoding: gzip, deflate, br**Accept-Language: zh-CN,zh;q=0.9,ja;q=0.8,en-US;q=0.7,en;q=0.6****:11
+2018.9.25-22:29:30
+
+ INFO: SEND:index.html:11
+2018.9.25-22:29:30
+
+ INFO: Header:HTTP/1.1 200 OK
+Server: Rypers/1.0
+Content-Length: 311
+Connection: close
+Content-Type: text/html
+
+:11
+2018.9.25-22:29:30
+
+ INFO: Time:write function total Run:34microseconds.
+:11
+2018.9.25-22:29:30
+
+ INFO: Time:read function total Run:33470microseconds.
+:12
+2018.9.25-22:29:30
+
+ INFO: request:GET /example.jpg HTTP/1.1**Host: 127.0.0.1:8080**Connection: keep-alive**User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36**Accept: image/webp,image/apng,image/*,*/*;q=0.8**Referer: http://127.0.0.1:8080/**Accept-Encoding: gzip, deflate, br**Accept-Language: zh-CN,zh;q=0.9,ja;q=0.8,en-US;q=0.7,en;q=0.6****:12
+2018.9.25-22:29:30
+
+ INFO: SEND:example.jpg:12
+2018.9.25-22:29:30
+
+ INFO: Header:HTTP/1.1 200 OK
+Server: Rypers/1.0
+Content-Length: 1249334
+Connection: close
+Content-Type: image/jpg
+
+:12
+2018.9.25-22:29:30
+
+ INFO: Time:write function total Run:7360microseconds.
+:12
+2018.9.25-22:29:31
+
+ INFO: Time:Accept function total Run:255875microseconds.
+:13
+2018.9.25-22:29:31
+
+ INFO: Time:fork functrion total Run:673microseconds.
+:13
+2018.9.25-22:29:31
+
+ INFO: Time:Accept function total Run:17microseconds.
+:14
+2018.9.25-22:29:31
+
+ INFO: Time:fork functrion total Run:980microseconds.
+:13
+2018.9.25-22:29:31
+
+ INFO: Time:read function total Run:120microseconds.
+:13
+2018.9.25-22:29:31
+
+ INFO: request:GET / HTTP/1.1**Host: 127.0.0.1:8080**Connection: keep-alive**Cache-Control: max-age=0**Upgrade-Insecure-Requests: 1**User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36**Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8**Accept-Encoding: gzip, deflate, br**Accept-Language: zh-CN,zh;q=0.9,ja;q=0.8,en-US;q=0.7,en;q=0.6****:13
+2018.9.25-22:29:31
+
+ INFO: SEND:index.html:13
+2018.9.25-22:29:31
+
+ INFO: Header:HTTP/1.1 200 OK
+Server: Rypers/1.0
+Content-Length: 311
+Connection: close
+Content-Type: text/html
+
+:13
+2018.9.25-22:29:31
+
+ INFO: Time:fork functrion total Run:1391microseconds.
+:14
+2018.9.25-22:29:31
+
+ INFO: Time:write function total Run:97microseconds.
+:13
+2018.9.25-22:29:31
+
+ INFO: Time:fork functrion total Run:1695microseconds.
+:14
+2018.9.25-22:29:31
+
+ INFO: Time:read function total Run:38074microseconds.
+:14
+2018.9.25-22:29:31
+
+ INFO: request:GET /example.jpg HTTP/1.1**Host: 127.0.0.1:8080**Connection: keep-alive**User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36**Accept: image/webp,image/apng,image/*,*/*;q=0.8**Referer: http://127.0.0.1:8080/**Accept-Encoding: gzip, deflate, br**Accept-Language: zh-CN,zh;q=0.9,ja;q=0.8,en-US;q=0.7,en;q=0.6****:14
+2018.9.25-22:29:31
+
+ INFO: SEND:example.jpg:14
+2018.9.25-22:29:31
+
+ INFO: Header:HTTP/1.1 200 OK
+Server: Rypers/1.0
+Content-Length: 1249334
+Connection: close
+Content-Type: image/jpg
+
+:14
+2018.9.25-22:29:31
+
+ INFO: Time:write function total Run:10636microseconds.
+:14
+2018.9.25-22:29:31
+
+ INFO: Time:Accept function total Run:275604microseconds.
+:15
+2018.9.25-22:29:31
+
+ INFO: Time:fork functrion total Run:260microseconds.
+:15
+2018.9.25-22:29:31
+
+ INFO: Time:Accept function total Run:13microseconds.
+:16
+2018.9.25-22:29:31
+
+ INFO: Time:fork functrion total Run:677microseconds.
+:15
+2018.9.25-22:29:31
+
+ INFO: Time:fork functrion total Run:615microseconds.
+:16
+2018.9.25-22:29:31
+
+ INFO: Time:fork functrion total Run:1036microseconds.
+:16
+2018.9.25-22:29:31
+
+ INFO: Time:read function total Run:853microseconds.
+:15
+2018.9.25-22:29:31
+
+ INFO: request:GET / HTTP/1.1**Host: 127.0.0.1:8080**Connection: keep-alive**Cache-Control: max-age=0**Upgrade-Insecure-Requests: 1**User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36**Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8**Accept-Encoding: gzip, deflate, br**Accept-Language: zh-CN,zh;q=0.9,ja;q=0.8,en-US;q=0.7,en;q=0.6****:15
+2018.9.25-22:29:31
+
+ INFO: SEND:index.html:15
+2018.9.25-22:29:31
+
+ INFO: Header:HTTP/1.1 200 OK
+Server: Rypers/1.0
+Content-Length: 311
+Connection: close
+Content-Type: text/html
+
+:15
+2018.9.25-22:29:31
+
+ INFO: Time:write function total Run:41microseconds.
+:15
+2018.9.25-22:29:31
+
+ INFO: Time:read function total Run:52467microseconds.
+:16
+2018.9.25-22:29:31
+
+ INFO: request:GET /example.jpg HTTP/1.1**Host: 127.0.0.1:8080**Connection: keep-alive**User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36**Accept: image/webp,image/apng,image/*,*/*;q=0.8**Referer: http://127.0.0.1:8080/**Accept-Encoding: gzip, deflate, br**Accept-Language: zh-CN,zh;q=0.9,ja;q=0.8,en-US;q=0.7,en;q=0.6****:16
+2018.9.25-22:29:31
+
+ INFO: SEND:example.jpg:16
+2018.9.25-22:29:31
+
+ INFO: Header:HTTP/1.1 200 OK
+Server: Rypers/1.0
+Content-Length: 1249334
+Connection: close
+Content-Type: image/jpg
+
+:16
+2018.9.25-22:29:31
+
+ INFO: Time:write function total Run:5803microseconds.
+:16
+2018.9.25-22:29:31
+
+ INFO: Time:Accept function total Run:282086microseconds.
+:17
+2018.9.25-22:29:31
+
+ INFO: Time:fork functrion total Run:2359microseconds.
+:17
+2018.9.25-22:29:31
+
+ INFO: Time:Accept function total Run:26microseconds.
+:18
+2018.9.25-22:29:31
+
+ INFO: Time:fork functrion total Run:3581microseconds.
+:17
+2018.9.25-22:29:31
+
+ INFO: Time:read function total Run:704microseconds.
+:17
+2018.9.25-22:29:31
+
+ INFO: request:GET / HTTP/1.1**Host: 127.0.0.1:8080**Connection: keep-alive**Cache-Control: max-age=0**Upgrade-Insecure-Requests: 1**User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36**Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8**Accept-Encoding: gzip, deflate, br**Accept-Language: zh-CN,zh;q=0.9,ja;q=0.8,en-US;q=0.7,en;q=0.6****:17
+2018.9.25-22:29:31
+
+ INFO: SEND:index.html:17
+2018.9.25-22:29:31
+
+ INFO: Header:HTTP/1.1 200 OK
+Server: Rypers/1.0
+Content-Length: 311
+Connection: close
+Content-Type: text/html
+
+:17
+2018.9.25-22:29:31
+
+ INFO: Time:fork functrion total Run:3167microseconds.
+:18
+2018.9.25-22:29:31
+
+ INFO: Time:write function total Run:31microseconds.
+:17
+2018.9.25-22:29:31
+
+ INFO: Time:fork functrion total Run:3985microseconds.
+:18
+2018.9.25-22:29:31
+
+ INFO: Time:read function total Run:73680microseconds.
+:18
+2018.9.25-22:29:31
+
+ INFO: request:GET /example.jpg HTTP/1.1**Host: 127.0.0.1:8080**Connection: keep-alive**User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36**Accept: image/webp,image/apng,image/*,*/*;q=0.8**Referer: http://127.0.0.1:8080/**Accept-Encoding: gzip, deflate, br**Accept-Language: zh-CN,zh;q=0.9,ja;q=0.8,en-US;q=0.7,en;q=0.6****:18
+2018.9.25-22:29:31
+
+ INFO: SEND:example.jpg:18
+2018.9.25-22:29:31
+
+ INFO: Header:HTTP/1.1 200 OK
+Server: Rypers/1.0
+Content-Length: 1249334
+Connection: close
+Content-Type: image/jpg
+
+:18
+2018.9.25-22:29:31
+
+ INFO: Time:write function total Run:28584microseconds.
+:18
+2018.9.25-22:29:32
+
+ INFO: Time:Accept function total Run:291295microseconds.
+:19
+2018.9.25-22:29:32
+
+ INFO: Time:fork functrion total Run:303microseconds.
+:19
+2018.9.25-22:29:32
+
+ INFO: Time:Accept function total Run:24microseconds.
+:20
+2018.9.25-22:29:32
+
+ INFO: Time:fork functrion total Run:585microseconds.
+:19
+2018.9.25-22:29:32
+
+ INFO: Time:fork functrion total Run:558microseconds.
+:20
+2018.9.25-22:29:32
+
+ INFO: Time:fork functrion total Run:823microseconds.
+:20
+2018.9.25-22:29:32
+
+ INFO: Time:read function total Run:1306microseconds.
+:19
+2018.9.25-22:29:32
+
+ INFO: request:GET / HTTP/1.1**Host: 127.0.0.1:8080**Connection: keep-alive**Cache-Control: max-age=0**Upgrade-Insecure-Requests: 1**User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36**Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8**Accept-Encoding: gzip, deflate, br**Accept-Language: zh-CN,zh;q=0.9,ja;q=0.8,en-US;q=0.7,en;q=0.6****:19
+2018.9.25-22:29:32
+
+ INFO: SEND:index.html:19
+2018.9.25-22:29:32
+
+ INFO: Header:HTTP/1.1 200 OK
+Server: Rypers/1.0
+Content-Length: 311
+Connection: close
+Content-Type: text/html
+
+:19
+2018.9.25-22:29:32
+
+ INFO: Time:write function total Run:41microseconds.
+:19
+2018.9.25-22:29:32
+
+ INFO: Time:read function total Run:33519microseconds.
+:20
+2018.9.25-22:29:32
+
+ INFO: request:GET /example.jpg HTTP/1.1**Host: 127.0.0.1:8080**Connection: keep-alive**User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36**Accept: image/webp,image/apng,image/*,*/*;q=0.8**Referer: http://127.0.0.1:8080/**Accept-Encoding: gzip, deflate, br**Accept-Language: zh-CN,zh;q=0.9,ja;q=0.8,en-US;q=0.7,en;q=0.6****:20
+2018.9.25-22:29:32
+
+ INFO: SEND:example.jpg:20
+2018.9.25-22:29:32
+
+ INFO: Header:HTTP/1.1 200 OK
+Server: Rypers/1.0
+Content-Length: 1249334
+Connection: close
+Content-Type: image/jpg
+
+:20
+2018.9.25-22:29:32
+
+ INFO: Time:write function total Run:2361microseconds.
+:20
+2018.9.25-22:29:32
+
+ INFO: Time:Accept function total Run:383787microseconds.
+:21
+2018.9.25-22:29:32
+
+ INFO: Time:fork functrion total Run:252microseconds.
+:21
+2018.9.25-22:29:32
+
+ INFO: Time:Accept function total Run:25microseconds.
+:22
+2018.9.25-22:29:32
+
+ INFO: Time:fork functrion total Run:568microseconds.
+:21
+2018.9.25-22:29:32
+
+ INFO: Time:fork functrion total Run:718microseconds.
+:22
+2018.9.25-22:29:32
+
+ INFO: Time:read function total Run:837microseconds.
+:21
+2018.9.25-22:29:32
+
+ INFO: Time:fork functrion total Run:1188microseconds.
+:22
+2018.9.25-22:29:32
+
+ INFO: request:GET / HTTP/1.1**Host: 127.0.0.1:8080**Connection: keep-alive**Cache-Control: max-age=0**Upgrade-Insecure-Requests: 1**User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36**Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8**Accept-Encoding: gzip, deflate, br**Accept-Language: zh-CN,zh;q=0.9,ja;q=0.8,en-US;q=0.7,en;q=0.6****:21
+2018.9.25-22:29:32
+
+ INFO: SEND:index.html:21
+2018.9.25-22:29:32
+
+ INFO: Header:HTTP/1.1 200 OK
+Server: Rypers/1.0
+Content-Length: 311
+Connection: close
+Content-Type: text/html
+
+:21
+2018.9.25-22:29:32
+
+ INFO: Time:write function total Run:81microseconds.
+:21
+2018.9.25-22:29:32
+
+ INFO: Time:read function total Run:30152microseconds.
+:22
+2018.9.25-22:29:32
+
+ INFO: request:GET /example.jpg HTTP/1.1**Host: 127.0.0.1:8080**Connection: keep-alive**User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36**Accept: image/webp,image/apng,image/*,*/*;q=0.8**Referer: http://127.0.0.1:8080/**Accept-Encoding: gzip, deflate, br**Accept-Language: zh-CN,zh;q=0.9,ja;q=0.8,en-US;q=0.7,en;q=0.6****:22
+2018.9.25-22:29:32
+
+ INFO: SEND:example.jpg:22
+2018.9.25-22:29:32
+
+ INFO: Header:HTTP/1.1 200 OK
+Server: Rypers/1.0
+Content-Length: 1249334
+Connection: close
+Content-Type: image/jpg
+
+:22
+2018.9.25-22:29:32
+
+ INFO: Time:write function total Run:22612microseconds.
+:22
+2018.9.25-22:29:32
+
+ INFO: Time:Accept function total Run:218392microseconds.
+:23
+2018.9.25-22:29:32
+
+ INFO: Time:fork functrion total Run:2073microseconds.
+:23
+2018.9.25-22:29:32
+
+ INFO: Time:Accept function total Run:48microseconds.
+:24
+2018.9.25-22:29:32
+
+ INFO: Time:fork functrion total Run:1954microseconds.
+:24
+2018.9.25-22:29:32
+
+ INFO: Time:fork functrion total Run:4311microseconds.
+:23
+2018.9.25-22:29:32
+
+ INFO: Time:fork functrion total Run:3152microseconds.
+:24
+2018.9.25-22:29:32
+
+ INFO: Time:read function total Run:583microseconds.
+:23
+2018.9.25-22:29:32
+
+ INFO: request:GET / HTTP/1.1**Host: 127.0.0.1:8080**Connection: keep-alive**Cache-Control: max-age=0**Upgrade-Insecure-Requests: 1**User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36**Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8**Accept-Encoding: gzip, deflate, br**Accept-Language: zh-CN,zh;q=0.9,ja;q=0.8,en-US;q=0.7,en;q=0.6****:23
+2018.9.25-22:29:32
+
+ INFO: SEND:index.html:23
+2018.9.25-22:29:32
+
+ INFO: Header:HTTP/1.1 200 OK
+Server: Rypers/1.0
+Content-Length: 311
+Connection: close
+Content-Type: text/html
+
+:23
+2018.9.25-22:29:32
+
+ INFO: Time:write function total Run:55microseconds.
+:23
+2018.9.25-22:29:32
+
+ INFO: Time:read function total Run:38590microseconds.
+:24
+2018.9.25-22:29:32
+
+ INFO: request:GET /example.jpg HTTP/1.1**Host: 127.0.0.1:8080**Connection: keep-alive**User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36**Accept: image/webp,image/apng,image/*,*/*;q=0.8**Referer: http://127.0.0.1:8080/**Accept-Encoding: gzip, deflate, br**Accept-Language: zh-CN,zh;q=0.9,ja;q=0.8,en-US;q=0.7,en;q=0.6****:24
+2018.9.25-22:29:32
+
+ INFO: SEND:example.jpg:24
+2018.9.25-22:29:32
+
+ INFO: Header:HTTP/1.1 200 OK
+Server: Rypers/1.0
+Content-Length: 1249334
+Connection: close
+Content-Type: image/jpg
+
+:24
+2018.9.25-22:29:32
+
+ INFO: Time:write function total Run:71652microseconds.
+:24
+2018.9.25-22:29:32
+
+ INFO: Time:Accept function total Run:200195microseconds.
+:25
+2018.9.25-22:29:32
+
+ INFO: Time:fork functrion total Run:611microseconds.
+:25
+2018.9.25-22:29:32
+
+ INFO: Time:Accept function total Run:17microseconds.
+:26
+2018.9.25-22:29:32
+
+ INFO: Time:fork functrion total Run:1366microseconds.
+:25
+2018.9.25-22:29:32
+
+ INFO: Time:fork functrion total Run:892microseconds.
+:26
+2018.9.25-22:29:32
+
+ INFO: Time:read function total Run:367microseconds.
+:25
+2018.9.25-22:29:32
+
+ INFO: Time:fork functrion total Run:1083microseconds.
+:262018.9.25-22:29:32
+
+ INFO: request:GET / HTTP/1.1**Host: 127.0.0.1:8080**Connection: keep-alive**Cache-Control: max-age=0**Upgrade-Insecure-Requests: 1**User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36**Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8**Accept-Encoding: gzip, deflate, br**Accept-Language: zh-CN,zh;q=0.9,ja;q=0.8,en-US;q=0.7,en;q=0.6****:25
+
+2018.9.25-22:29:32
+
+ INFO: SEND:index.html:25
+2018.9.25-22:29:32
+
+ INFO: Header:HTTP/1.1 200 OK
+Server: Rypers/1.0
+Content-Length: 311
+Connection: close
+Content-Type: text/html
+
+:25
+2018.9.25-22:29:32
+
+ INFO: Time:write function total Run:34microseconds.
+:25
+2018.9.25-22:29:32
+
+ INFO: Time:read function total Run:67274microseconds.
+:26
+2018.9.25-22:29:32
+
+ INFO: request:GET /example.jpg HTTP/1.1**Host: 127.0.0.1:8080**Connection: keep-alive**User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36**Accept: image/webp,image/apng,image/*,*/*;q=0.8**Referer: http://127.0.0.1:8080/**Accept-Encoding: gzip, deflate, br**Accept-Language: zh-CN,zh;q=0.9,ja;q=0.8,en-US;q=0.7,en;q=0.6****:26
+2018.9.25-22:29:32
+
+ INFO: SEND:example.jpg:26
+2018.9.25-22:29:32
+
+ INFO: Header:HTTP/1.1 200 OK
+Server: Rypers/1.0
+Content-Length: 1249334
+Connection: close
+Content-Type: image/jpg
+
+:26
+2018.9.25-22:29:32
+
+ INFO: Time:write function total Run:62020microseconds.
+:26
+2018.9.25-22:29:33
+
+ INFO: Time:Accept function total Run:250127microseconds.
+:27
+2018.9.25-22:29:33
+
+ INFO: Time:fork functrion total Run:1218microseconds.
+:27
+2018.9.25-22:29:33
+
+ INFO: Time:Accept function total Run:13microseconds.
+:28
+2018.9.25-22:29:33
+
+ INFO: Time:fork functrion total Run:1429microseconds.
+:27
+2018.9.25-22:29:33
+
+ INFO: Time:fork functrion total Run:1240microseconds.
+:28
+2018.9.25-22:29:33
+
+ INFO: Time:fork functrion total Run:1525microseconds.
+:28
+2018.9.25-22:29:33
+
+ INFO: Time:read function total Run:4636microseconds.
+:27
+2018.9.25-22:29:33
+
+ INFO: request:GET / HTTP/1.1**Host: 127.0.0.1:8080**Connection: keep-alive**Cache-Control: max-age=0**Upgrade-Insecure-Requests: 1**User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36**Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8**Accept-Encoding: gzip, deflate, br**Accept-Language: zh-CN,zh;q=0.9,ja;q=0.8,en-US;q=0.7,en;q=0.6****:27
+2018.9.25-22:29:33
+
+ INFO: SEND:index.html:27
+2018.9.25-22:29:33
+
+ INFO: Header:HTTP/1.1 200 OK
+Server: Rypers/1.0
+Content-Length: 311
+Connection: close
+Content-Type: text/html
+
+:27
+2018.9.25-22:29:33
+
+ INFO: Time:write function total Run:19microseconds.
+:27
+2018.9.25-22:29:33
+
+ INFO: Time:read function total Run:55903microseconds.
+:28
+2018.9.25-22:29:33
+
+ INFO: request:GET /example.jpg HTTP/1.1**Host: 127.0.0.1:8080**Connection: keep-alive**User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36**Accept: image/webp,image/apng,image/*,*/*;q=0.8**Referer: http://127.0.0.1:8080/**Accept-Encoding: gzip, deflate, br**Accept-Language: zh-CN,zh;q=0.9,ja;q=0.8,en-US;q=0.7,en;q=0.6****:28
+2018.9.25-22:29:33
+
+ INFO: SEND:example.jpg:28
+2018.9.25-22:29:33
+
+ INFO: Header:HTTP/1.1 200 OK
+Server: Rypers/1.0
+Content-Length: 1249334
+Connection: close
+Content-Type: image/jpg
+
+:28
+2018.9.25-22:29:33
+
+ INFO: Time:write function total Run:108531microseconds.
+:28
+2018.9.25-22:29:33
+
+ INFO: Time:Accept function total Run:192066microseconds.
+:29
+2018.9.25-22:29:33
+
+ INFO: Time:fork functrion total Run:784microseconds.
+:29
+2018.9.25-22:29:33
+
+ INFO: Time:fork functrion total Run:1465microseconds.
+:29
+2018.9.25-22:29:33
+
+ INFO: Time:read function total Run:1548microseconds.
+:29
+2018.9.25-22:29:33
+
+ INFO: request:GET / HTTP/1.1**Host: 127.0.0.1:8080**Connection: keep-alive**Cache-Control: max-age=0**Upgrade-Insecure-Requests: 1**User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36**Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8**Accept-Encoding: gzip, deflate, br**Accept-Language: zh-CN,zh;q=0.9,ja;q=0.8,en-US;q=0.7,en;q=0.6****:29
+2018.9.25-22:29:33
+
+ INFO: SEND:index.html:29
+2018.9.25-22:29:33
+
+ INFO: Header:HTTP/1.1 200 OK
+Server: Rypers/1.0
+Content-Length: 311
+Connection: close
+Content-Type: text/html
+
+:29
+2018.9.25-22:29:33
+
+ INFO: Time:write function total Run:36microseconds.
+:29
+2018.9.25-22:29:33
+
+ INFO: Time:Accept function total Run:72551microseconds.
+:30
+2018.9.25-22:29:33
+
+ INFO: Time:fork functrion total Run:331microseconds.
+:30
+2018.9.25-22:29:33
+
+ INFO: Time:fork functrion total Run:549microseconds.
+:30
+2018.9.25-22:29:33
+
+ INFO: Time:read function total Run:121microseconds.
+:30
+2018.9.25-22:29:33
+
+ INFO: request:GET /example.jpg HTTP/1.1**Host: 127.0.0.1:8080**Connection: keep-alive**User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36**Accept: image/webp,image/apng,image/*,*/*;q=0.8**Referer: http://127.0.0.1:8080/**Accept-Encoding: gzip, deflate, br**Accept-Language: zh-CN,zh;q=0.9,ja;q=0.8,en-US;q=0.7,en;q=0.6****:30
+2018.9.25-22:29:33
+
+ INFO: SEND:example.jpg:30
+2018.9.25-22:29:33
+
+ INFO: Header:HTTP/1.1 200 OK
+Server: Rypers/1.0
+Content-Length: 1249334
+Connection: close
+Content-Type: image/jpg
+
+:30
+2018.9.25-22:29:33
+
+ INFO: Time:write function total Run:9182microseconds.
+:30
+2018.9.25-22:29:33
+
+ INFO: Time:Accept function total Run:31956microseconds.
+:31
+2018.9.25-22:29:33
+
+ INFO: Time:fork functrion total Run:208microseconds.
+:31
+2018.9.25-22:29:33
+
+ INFO: Time:Accept function total Run:22microseconds.
+:32
+2018.9.25-22:29:33
+
+ INFO: Time:fork functrion total Run:410microseconds.
+:31
+2018.9.25-22:29:33
+
+ INFO: Time:fork functrion total Run:281microseconds.
+:32
+2018.9.25-22:29:33
+
+ INFO: Time:fork functrion total Run:492microseconds.
+:32
+2018.9.25-22:29:33
+
+ INFO: Time:read function total Run:22148microseconds.
+:31
+2018.9.25-22:29:33
+
+ INFO: request:GET / HTTP/1.1**Host: 127.0.0.1:8080**Connection: keep-alive**Cache-Control: max-age=0**Upgrade-Insecure-Requests: 1**User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36**Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8**Accept-Encoding: gzip, deflate, br**Accept-Language: zh-CN,zh;q=0.9,ja;q=0.8,en-US;q=0.7,en;q=0.6****:31
+2018.9.25-22:29:33
+
+ INFO: SEND:index.html:31
+2018.9.25-22:29:33
+
+ INFO: Header:HTTP/1.1 200 OK
+Server: Rypers/1.0
+Content-Length: 311
+Connection: close
+Content-Type: text/html
+
+:31
+2018.9.25-22:29:33
+
+ INFO: Time:write function total Run:32microseconds.
+:31
+2018.9.25-22:29:33
+
+ INFO: Time:Accept function total Run:124193microseconds.
+:33
+2018.9.25-22:29:33
+
+ INFO: Time:fork functrion total Run:1276microseconds.
+:33
+2018.9.25-22:29:33
+
+ INFO: Time:fork functrion total Run:1580microseconds.
+:33
+2018.9.25-22:29:33
+
+ INFO: Time:read function total Run:127792microseconds.
+:32
+2018.9.25-22:29:33
+
+ INFO: request:GET / HTTP/1.1**Host: 127.0.0.1:8080**Connection: keep-alive**Cache-Control: max-age=0**Upgrade-Insecure-Requests: 1**User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36**Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8**Accept-Encoding: gzip, deflate, br**Accept-Language: zh-CN,zh;q=0.9,ja;q=0.8,en-US;q=0.7,en;q=0.6****:32
+2018.9.25-22:29:33
+
+ INFO: SEND:index.html:32
+2018.9.25-22:29:33
+
+ INFO: Header:HTTP/1.1 200 OK
+Server: Rypers/1.0
+Content-Length: 311
+Connection: close
+Content-Type: text/html
+
+:32
+2018.9.25-22:29:33
+
+ INFO: Time:write function total Run:22microseconds.
+:32
+2018.9.25-22:29:33
+
+ INFO: Time:read function total Run:13769microseconds.
+:33
+2018.9.25-22:29:33
+
+ INFO: request:GET /example.jpg HTTP/1.1**Host: 127.0.0.1:8080**Connection: keep-alive**User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36**Accept: image/webp,image/apng,image/*,*/*;q=0.8**Referer: http://127.0.0.1:8080/**Accept-Encoding: gzip, deflate, br**Accept-Language: zh-CN,zh;q=0.9,ja;q=0.8,en-US;q=0.7,en;q=0.6****:33
+2018.9.25-22:29:33
+
+ INFO: SEND:example.jpg:33
+2018.9.25-22:29:33
+
+ INFO: Header:HTTP/1.1 200 OK
+Server: Rypers/1.0
+Content-Length: 1249334
+Connection: close
+Content-Type: image/jpg
+
+:33
+2018.9.25-22:29:33
+
+ INFO: Time:write function total Run:42430microseconds.
+:33
+2018.9.25-22:29:33
+
+ INFO: Time:Accept function total Run:198778microseconds.
+:34
+2018.9.25-22:29:33
+
+ INFO: Time:fork functrion total Run:1341microseconds.
+:34
+2018.9.25-22:29:33
+
+ INFO: Time:fork functrion total Run:1549microseconds.
+:34
+2018.9.25-22:29:33
+
+ INFO: Time:read function total Run:91microseconds.
+:34
+2018.9.25-22:29:33
+
+ INFO: request:GET /example.jpg HTTP/1.1**Host: 127.0.0.1:8080**Connection: keep-alive**User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36**Accept: image/webp,image/apng,image/*,*/*;q=0.8**Referer: http://127.0.0.1:8080/**Accept-Encoding: gzip, deflate, br**Accept-Language: zh-CN,zh;q=0.9,ja;q=0.8,en-US;q=0.7,en;q=0.6****:34
+2018.9.25-22:29:33
+
+ INFO: SEND:example.jpg:34
+2018.9.25-22:29:33
+
+ INFO: Header:HTTP/1.1 200 OK
+Server: Rypers/1.0
+Content-Length: 1249334
+Connection: close
+Content-Type: image/jpg
+
+:34
+2018.9.25-22:29:33
+
+ INFO: Time:Accept function total Run:70110microseconds.
+:35
+2018.9.25-22:29:33
+
+ INFO: Time:fork functrion total Run:280microseconds.
+:35
+2018.9.25-22:29:33
+
+ INFO: Time:fork functrion total Run:572microseconds.
+:35
+2018.9.25-22:29:33
+
+ INFO: Time:read function total Run:514microseconds.
+:35
+2018.9.25-22:29:33
+
+ INFO: request:GET / HTTP/1.1**Host: 127.0.0.1:8080**Connection: keep-alive**Cache-Control: max-age=0**Upgrade-Insecure-Requests: 1**User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36**Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8**Accept-Encoding: gzip, deflate, br**Accept-Language: zh-CN,zh;q=0.9,ja;q=0.8,en-US;q=0.7,en;q=0.6****:35
+2018.9.25-22:29:33
+
+ INFO: SEND:index.html:35
+2018.9.25-22:29:33
+
+ INFO: Header:HTTP/1.1 200 OK
+Server: Rypers/1.0
+Content-Length: 311
+Connection: close
+Content-Type: text/html
+
+:35
+2018.9.25-22:29:33
+
+ INFO: Time:write function total Run:53microseconds.
+:35
+2018.9.25-22:29:33
+
+ INFO: Time:write function total Run:114796microseconds.
+:34
+2018.9.25-22:29:33
+
+ INFO: Time:Accept function total Run:158095microseconds.
+:36
+2018.9.25-22:29:33
+
+ INFO: Time:fork functrion total Run:1274microseconds.
+:36
+2018.9.25-22:29:33
+
+ INFO: Time:Accept function total Run:32microseconds.
+:37
+2018.9.25-22:29:33
+
+ INFO: Time:fork functrion total Run:1639microseconds.
+:36
+2018.9.25-22:29:33
+
+ INFO: Time:read function total Run:116microseconds.
+:36
+2018.9.25-22:29:33
+
+ INFO: request:GET / HTTP/1.1**Host: 127.0.0.1:8080**Connection: keep-alive**Cache-Control: max-age=0**Upgrade-Insecure-Requests: 1**User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36**Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8**Accept-Encoding: gzip, deflate, br**Accept-Language: zh-CN,zh;q=0.9,ja;q=0.8,en-US;q=0.7,en;q=0.6****:36
+2018.9.25-22:29:33
+
+ INFO: SEND:index.html:36
+2018.9.25-22:29:33
+
+ INFO: Header:HTTP/1.1 200 OK
+Server: Rypers/1.0
+Content-Length: 311
+Connection: close
+Content-Type: text/html
+
+:36
+2018.9.25-22:29:33
+
+ INFO: Time:write function total Run:30microseconds.
+:36
+2018.9.25-22:29:33
+
+ INFO: Time:fork functrion total Run:3232microseconds.
+:37
+2018.9.25-22:29:33
+
+ INFO: Time:fork functrion total Run:4248microseconds.
+:37
+2018.9.25-22:29:33
+
+ INFO: Time:read function total Run:39868microseconds.
+:37
+2018.9.25-22:29:33
+
+ INFO: request:GET /example.jpg HTTP/1.1**Host: 127.0.0.1:8080**Connection: keep-alive**User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36**Accept: image/webp,image/apng,image/*,*/*;q=0.8**Referer: http://127.0.0.1:8080/**Accept-Encoding: gzip, deflate, br**Accept-Language: zh-CN,zh;q=0.9,ja;q=0.8,en-US;q=0.7,en;q=0.6****:37
+2018.9.25-22:29:33
+
+ INFO: SEND:example.jpg:37
+2018.9.25-22:29:33
+
+ INFO: Header:HTTP/1.1 200 OK
+Server: Rypers/1.0
+Content-Length: 1249334
+Connection: close
+Content-Type: image/jpg
+
+:37
+2018.9.25-22:29:33
+
+ INFO: Time:write function total Run:17911microseconds.
+:37
+2018.9.25-22:29:34
+
+ INFO: Time:Accept function total Run:101525microseconds.
+:38
+2018.9.25-22:29:34
+
+ INFO: Time:fork functrion total Run:470microseconds.
+:38
+2018.9.25-22:29:34
+
+ INFO: Time:Accept function total Run:37microseconds.
+:39
+2018.9.25-22:29:34
+
+ INFO: Time:fork functrion total Run:983microseconds.
+:38
+2018.9.25-22:29:34
+
+ INFO: Time:fork functrion total Run:1197microseconds.
+:39
+2018.9.25-22:29:34
+
+ INFO: Time:fork functrion total Run:1592microseconds.
+:39
+2018.9.25-22:29:34
+
+ INFO: Time:read function total Run:2762microseconds.
+:38
+2018.9.25-22:29:34
+
+ INFO: request:GET / HTTP/1.1**Host: 127.0.0.1:8080**Connection: keep-alive**Cache-Control: max-age=0**Upgrade-Insecure-Requests: 1**User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36**Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8**Accept-Encoding: gzip, deflate, br**Accept-Language: zh-CN,zh;q=0.9,ja;q=0.8,en-US;q=0.7,en;q=0.6****:38
+2018.9.25-22:29:34
+
+ INFO: SEND:index.html:38
+2018.9.25-22:29:34
+
+ INFO: Header:HTTP/1.1 200 OK
+Server: Rypers/1.0
+Content-Length: 311
+Connection: close
+Content-Type: text/html
+
+:38
+2018.9.25-22:29:34
+
+ INFO: Time:write function total Run:45microseconds.
+:38
+2018.9.25-22:29:34
+
+ INFO: Time:Accept function total Run:105929microseconds.
+:40
+2018.9.25-22:29:34
+
+ INFO: Time:fork functrion total Run:1374microseconds.
+:40
+2018.9.25-22:29:34
+
+ INFO: Time:fork functrion total Run:1638microseconds.
+:40
+2018.9.25-22:29:34
+
+ INFO: Time:read function total Run:111746microseconds.
+:39
+2018.9.25-22:29:34
+
+ INFO: request:GET / HTTP/1.1**Host: 127.0.0.1:8080**Connection: keep-alive**Cache-Control: max-age=0**Upgrade-Insecure-Requests: 1**User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36**Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8**Accept-Encoding: gzip, deflate, br**Accept-Language: zh-CN,zh;q=0.9,ja;q=0.8,en-US;q=0.7,en;q=0.6****:39
+2018.9.25-22:29:34
+
+ INFO: SEND:index.html:39
+2018.9.25-22:29:34
+
+ INFO: Header:HTTP/1.1 200 OK
+Server: Rypers/1.0
+Content-Length: 311
+Connection: close
+Content-Type: text/html
+
+:39
+2018.9.25-22:29:34
+
+ INFO: Time:write function total Run:35microseconds.
+:39
+2018.9.25-22:29:34
+
+ INFO: Time:read function total Run:82890microseconds.
+:40
+2018.9.25-22:29:34
+
+ INFO: request:GET /example.jpg HTTP/1.1**Host: 127.0.0.1:8080**Connection: keep-alive**User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36**Accept: image/webp,image/apng,image/*,*/*;q=0.8**Referer: http://127.0.0.1:8080/**Accept-Encoding: gzip, deflate, br**Accept-Language: zh-CN,zh;q=0.9,ja;q=0.8,en-US;q=0.7,en;q=0.6****:40
+2018.9.25-22:29:34
+
+ INFO: SEND:example.jpg:40
+2018.9.25-22:29:34
+
+ INFO: Header:HTTP/1.1 200 OK
+Server: Rypers/1.0
+Content-Length: 1249334
+Connection: close
+Content-Type: image/jpg
+
+:40
+2018.9.25-22:29:34
+
+ INFO: Time:write function total Run:24897microseconds.
+:40
+2018.9.25-22:29:34
+
+ INFO: Time:Accept function total Run:117411microseconds.
+:41
+2018.9.25-22:29:34
+
+ INFO: Time:fork functrion total Run:1287microseconds.
+:41
+2018.9.25-22:29:34
+
+ INFO: Time:Accept function total Run:26microseconds.
+:42
+2018.9.25-22:29:34
+
+ INFO: Time:fork functrion total Run:2171microseconds.
+:41
+2018.9.25-22:29:34
+
+ INFO: Time:fork functrion total Run:1250microseconds.
+:42
+2018.9.25-22:29:34
+
+ INFO: Time:fork functrion total Run:1546microseconds.
+:42
+2018.9.25-22:29:34
+
+ INFO: Time:read function total Run:27487microseconds.
+:41
+2018.9.25-22:29:34
+
+ INFO: request:GET / HTTP/1.1**Host: 127.0.0.1:8080**Connection: keep-alive**Cache-Control: max-age=0**Upgrade-Insecure-Requests: 1**User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36**Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8**Accept-Encoding: gzip, deflate, br**Accept-Language: zh-CN,zh;q=0.9,ja;q=0.8,en-US;q=0.7,en;q=0.6****:41
+2018.9.25-22:29:34
+
+ INFO: SEND:index.html:41
+2018.9.25-22:29:34
+
+ INFO: Header:HTTP/1.1 200 OK
+Server: Rypers/1.0
+Content-Length: 311
+Connection: close
+Content-Type: text/html
+
+:41
+2018.9.25-22:29:34
+
+ INFO: Time:write function total Run:27microseconds.
+:41
+2018.9.25-22:29:34
+
+ INFO: Time:read function total Run:138934microseconds.
+:42
+2018.9.25-22:29:34
+
+ INFO: request:GET /example.jpg HTTP/1.1**Host: 127.0.0.1:8080**Connection: keep-alive**User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36**Accept: image/webp,image/apng,image/*,*/*;q=0.8**Referer: http://127.0.0.1:8080/**Accept-Encoding: gzip, deflate, br**Accept-Language: zh-CN,zh;q=0.9,ja;q=0.8,en-US;q=0.7,en;q=0.6****:42
+2018.9.25-22:29:34
+
+ INFO: SEND:example.jpg:42
+2018.9.25-22:29:34
+
+ INFO: Header:HTTP/1.1 200 OK
+Server: Rypers/1.0
+Content-Length: 1249334
+Connection: close
+Content-Type: image/jpg
+
+:42
+2018.9.25-22:29:34
+
+ INFO: Time:write function total Run:78356microseconds.
+:42
+2018.9.25-22:29:34
+
+ INFO: Time:Accept function total Run:665586microseconds.
+:43
+2018.9.25-22:29:34
+2018.9.25-22:29:34
+
+ INFO: Time:fork functrion total Run:1131microseconds.
+:43
+
+ INFO: Time:fork functrion total Run:1622microseconds.
+:43
+2018.9.25-22:29:34
+
+ INFO: Time:Accept function total Run:18microseconds.
+:44
+2018.9.25-22:29:34
+
+ INFO: Time:read function total Run:86microseconds.
+:43
+2018.9.25-22:29:34
+
+ INFO: request:GET / HTTP/1.1**Host: 127.0.0.1:8080**Connection: keep-alive**Cache-Control: max-age=0**Upgrade-Insecure-Requests: 1**User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36**Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8**Accept-Encoding: gzip, deflate, br**Accept-Language: zh-CN,zh;q=0.9,ja;q=0.8,en-US;q=0.7,en;q=0.6****:43
+2018.9.25-22:29:34
+
+ INFO: Time:fork functrion total Run:193microseconds.
+:44
+2018.9.25-22:29:34
+
+ INFO: SEND:index.html:43
+2018.9.25-22:29:34
+
+ INFO: Header:HTTP/1.1 200 OK
+Server: Rypers/1.0
+Content-Length: 311
+Connection: close
+Content-Type: text/html
+
+:43
+2018.9.25-22:29:34
+
+ INFO: Time:write function total Run:20microseconds.
+:43
+2018.9.25-22:29:34
+
+ INFO: Time:fork functrion total Run:608microseconds.
+:44
+2018.9.25-22:29:34
+
+ INFO: Time:read function total Run:22547microseconds.
+:44
+2018.9.25-22:29:34
+
+ INFO: request:GET /example.jpg HTTP/1.1**Host: 127.0.0.1:8080**Connection: keep-alive**User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36**Accept: image/webp,image/apng,image/*,*/*;q=0.8**Referer: http://127.0.0.1:8080/**Accept-Encoding: gzip, deflate, br**Accept-Language: zh-CN,zh;q=0.9,ja;q=0.8,en-US;q=0.7,en;q=0.6****:44
+2018.9.25-22:29:34
+
+ INFO: SEND:example.jpg:44
+2018.9.25-22:29:34
+
+ INFO: Header:HTTP/1.1 200 OK
+Server: Rypers/1.0
+Content-Length: 1249334
+Connection: close
+Content-Type: image/jpg
+
+:44
+2018.9.25-22:29:34
+
+ INFO: Time:write function total Run:29238microseconds.
+:44
+2018.9.25-22:29:35
+
+ INFO: Time:Accept function total Run:179056microseconds.
+:45
+2018.9.25-22:29:35
+
+ INFO: Time:fork functrion total Run:350microseconds.
+:45
+2018.9.25-22:29:35
+
+ INFO: Time:fork functrion total Run:647microseconds.
+:45
+2018.9.25-22:29:35
+
+ INFO: Time:read function total Run:662microseconds.
+:45
+2018.9.25-22:29:35
+
+ INFO: request:GET / HTTP/1.1**Host: 127.0.0.1:8080**Connection: keep-alive**Cache-Control: max-age=0**Upgrade-Insecure-Requests: 1**User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36**Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8**Accept-Encoding: gzip, deflate, br**Accept-Language: zh-CN,zh;q=0.9,ja;q=0.8,en-US;q=0.7,en;q=0.6****:45
+2018.9.25-22:29:35
+
+ INFO: SEND:index.html:45
+2018.9.25-22:29:35
+
+ INFO: Header:HTTP/1.1 200 OK
+Server: Rypers/1.0
+Content-Length: 311
+Connection: close
+Content-Type: text/html
+
+:45
+2018.9.25-22:29:35
+
+ INFO: Time:write function total Run:24microseconds.
+:45
+2018.9.25-22:29:35
+
+ INFO: Time:Accept function total Run:29473microseconds.
+:46
+2018.9.25-22:29:35
+
+ INFO: Time:fork functrion total Run:1224microseconds.
+:46
+2018.9.25-22:29:35
+
+ INFO: Time:fork functrion total Run:1441microseconds.
+:46
+2018.9.25-22:29:35
+
+ INFO: Time:read function total Run:88microseconds.
+:46
+2018.9.25-22:29:35
+
+ INFO: request:GET /example.jpg HTTP/1.1**Host: 127.0.0.1:8080**Connection: keep-alive**User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36**Accept: image/webp,image/apng,image/*,*/*;q=0.8**Referer: http://127.0.0.1:8080/**Accept-Encoding: gzip, deflate, br**Accept-Language: zh-CN,zh;q=0.9,ja;q=0.8,en-US;q=0.7,en;q=0.6****:46
+2018.9.25-22:29:35
+
+ INFO: SEND:example.jpg:46
+2018.9.25-22:29:35
+
+ INFO: Header:HTTP/1.1 200 OK
+Server: Rypers/1.0
+Content-Length: 1249334
+Connection: close
+Content-Type: image/jpg
+
+:46
+2018.9.25-22:29:35
+
+ INFO: Time:write function total Run:16944microseconds.
+:46
+2018.9.25-22:29:35
+
+ INFO: Time:Accept function total Run:172699microseconds.
+:47
+2018.9.25-22:29:35
+
+ INFO: Time:fork functrion total Run:1440microseconds.
+:47
+2018.9.25-22:29:35
+
+ INFO: Time:fork functrion total Run:1822microseconds.
+:47
+2018.9.25-22:29:35
+
+ INFO: Time:read function total Run:493microseconds.
+:47
+2018.9.25-22:29:35
+
+ INFO: request:GET / HTTP/1.1**Host: 127.0.0.1:8080**Connection: keep-alive**Cache-Control: max-age=0**Upgrade-Insecure-Requests: 1**User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36**Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8**Accept-Encoding: gzip, deflate, br**Accept-Language: zh-CN,zh;q=0.9,ja;q=0.8,en-US;q=0.7,en;q=0.6****:47
+2018.9.25-22:29:35
+
+ INFO: SEND:index.html:47
+2018.9.25-22:29:35
+
+ INFO: Header:HTTP/1.1 200 OK
+Server: Rypers/1.0
+Content-Length: 311
+Connection: close
+Content-Type: text/html
+
+:47
+2018.9.25-22:29:35
+
+ INFO: Time:write function total Run:24microseconds.
+:47
+2018.9.25-22:29:35
+
+ INFO: Time:Accept function total Run:49166microseconds.
+:48
+2018.9.25-22:29:35
+
+ INFO: Time:fork functrion total Run:1284microseconds.
+:48
+2018.9.25-22:29:35
+
+ INFO: Time:fork functrion total Run:1522microseconds.
+:48
+2018.9.25-22:29:35
+
+ INFO: Time:read function total Run:93microseconds.
+:48
+2018.9.25-22:29:35
+
+ INFO: request:GET /example.jpg HTTP/1.1**Host: 127.0.0.1:8080**Connection: keep-alive**User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36**Accept: image/webp,image/apng,image/*,*/*;q=0.8**Referer: http://127.0.0.1:8080/**Accept-Encoding: gzip, deflate, br**Accept-Language: zh-CN,zh;q=0.9,ja;q=0.8,en-US;q=0.7,en;q=0.6****:48
+2018.9.25-22:29:35
+
+ INFO: SEND:example.jpg:48
+2018.9.25-22:29:35
+
+ INFO: Header:HTTP/1.1 200 OK
+Server: Rypers/1.0
+Content-Length: 1249334
+Connection: close
+Content-Type: image/jpg
+
+:48
+2018.9.25-22:29:35
+
+ INFO: Time:write function total Run:47868microseconds.
+:48
+2018.9.25-22:29:35
+
+ INFO: Time:Accept function total Run:104918microseconds.
+:49
+2018.9.25-22:29:35
+
+ INFO: Time:fork functrion total Run:455microseconds.
+:49
+2018.9.25-22:29:35
+
+ INFO: Time:fork functrion total Run:730microseconds.
+:49
+2018.9.25-22:29:35
+
+ INFO: Time:read function total Run:1443microseconds.
+:49
+2018.9.25-22:29:35
+
+ INFO: request:GET / HTTP/1.1**Host: 127.0.0.1:8080**Connection: keep-alive**Cache-Control: max-age=0**Upgrade-Insecure-Requests: 1**User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36**Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8**Accept-Encoding: gzip, deflate, br**Accept-Language: zh-CN,zh;q=0.9,ja;q=0.8,en-US;q=0.7,en;q=0.6****:49
+2018.9.25-22:29:35
+
+ INFO: SEND:index.html:49
+2018.9.25-22:29:35
+
+ INFO: Header:HTTP/1.1 200 OK
+Server: Rypers/1.0
+Content-Length: 311
+Connection: close
+Content-Type: text/html
+
+:49
+2018.9.25-22:29:35
+
+ INFO: Time:write function total Run:65microseconds.
+:49
+2018.9.25-22:29:35
+
+ INFO: Time:Accept function total Run:70355microseconds.
+:50
+2018.9.25-22:29:35
+
+ INFO: Time:fork functrion total Run:805microseconds.
+:50
+2018.9.25-22:29:35
+
+ INFO: Time:Accept function total Run:60microseconds.
+:51
+2018.9.25-22:29:35
+
+ INFO: Time:fork functrion total Run:1309microseconds.
+:50
+2018.9.25-22:29:35
+
+ INFO: Time:fork functrion total Run:763microseconds.
+:51
+2018.9.25-22:29:35
+
+ INFO: Time:fork functrion total Run:1265microseconds.
+:51
+2018.9.25-22:29:35
+
+ INFO: Time:read function total Run:3695microseconds.
+:50
+2018.9.25-22:29:35
+
+ INFO: request:GET / HTTP/1.1**Host: 127.0.0.1:8080**Connection: keep-alive**Cache-Control: max-age=0**Upgrade-Insecure-Requests: 1**User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36**Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8**Accept-Encoding: gzip, deflate, br**Accept-Language: zh-CN,zh;q=0.9,ja;q=0.8,en-US;q=0.7,en;q=0.6****:50
+2018.9.25-22:29:35
+
+ INFO: SEND:index.html:50
+2018.9.25-22:29:35
+
+ INFO: Header:HTTP/1.1 200 OK
+Server: Rypers/1.0
+Content-Length: 311
+Connection: close
+Content-Type: text/html
+
+:50
+2018.9.25-22:29:35
+
+ INFO: Time:write function total Run:24microseconds.
+:50
+2018.9.25-22:29:35
+
+ INFO: Time:read function total Run:14527microseconds.
+:51
+2018.9.25-22:29:35
+
+ INFO: request:GET /example.jpg HTTP/1.1**Host: 127.0.0.1:8080**Connection: keep-alive**User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36**Accept: image/webp,image/apng,image/*,*/*;q=0.8**Referer: http://127.0.0.1:8080/**Accept-Encoding: gzip, deflate, br**Accept-Language: zh-CN,zh;q=0.9,ja;q=0.8,en-US;q=0.7,en;q=0.6****:51
+2018.9.25-22:29:35
+
+ INFO: SEND:example.jpg:51
+2018.9.25-22:29:35
+
+ INFO: Header:HTTP/1.1 200 OK
+Server: Rypers/1.0
+Content-Length: 1249334
+Connection: close
+Content-Type: image/jpg
+
+:51
+2018.9.25-22:29:35
+
+ INFO: Time:write function total Run:26350microseconds.
+:51
+2018.9.25-22:29:35
+
+ INFO: Time:Accept function total Run:115125microseconds.
+:52
+2018.9.25-22:29:35
+
+ INFO: Time:fork functrion total Run:1406microseconds.
+:52
+2018.9.25-22:29:35
+
+ INFO: Time:fork functrion total Run:1719microseconds.
+:52
+2018.9.25-22:29:35
+
+ INFO: Time:read function total Run:90microseconds.
+:52
+2018.9.25-22:29:35
+
+ INFO: request:GET /example.jpg HTTP/1.1**Host: 127.0.0.1:8080**Connection: keep-alive**User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36**Accept: image/webp,image/apng,image/*,*/*;q=0.8**Referer: http://127.0.0.1:8080/**Accept-Encoding: gzip, deflate, br**Accept-Language: zh-CN,zh;q=0.9,ja;q=0.8,en-US;q=0.7,en;q=0.6****:52
+2018.9.25-22:29:35
+
+ INFO: SEND:example.jpg:52
+2018.9.25-22:29:35
+
+ INFO: Header:HTTP/1.1 200 OK
+Server: Rypers/1.0
+Content-Length: 1249334
+Connection: close
+Content-Type: image/jpg
+
+:52
+2018.9.25-22:29:35
+
+ INFO: Time:write function total Run:40469microseconds.
+:52
+2018.9.25-22:29:35
+
+ INFO: Time:Accept function total Run:99096microseconds.
+:53
+2018.9.25-22:29:35
+
+ INFO: Time:fork functrion total Run:1284microseconds.
+:53
+2018.9.25-22:29:35
+
+ INFO: Time:fork functrion total Run:1612microseconds.
+:53
+2018.9.25-22:29:35
+
+ INFO: Time:read function total Run:992microseconds.
+:53
+2018.9.25-22:29:35
+
+ INFO: request:GET / HTTP/1.1**Host: 127.0.0.1:8080**Connection: keep-alive**Cache-Control: max-age=0**Upgrade-Insecure-Requests: 1**User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36**Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8**Accept-Encoding: gzip, deflate, br**Accept-Language: zh-CN,zh;q=0.9,ja;q=0.8,en-US;q=0.7,en;q=0.6****:53
+2018.9.25-22:29:35
+
+ INFO: SEND:index.html:53
+2018.9.25-22:29:35
+
+ INFO: Header:HTTP/1.1 200 OK
+Server: Rypers/1.0
+Content-Length: 311
+Connection: close
+Content-Type: text/html
+
+:53
+2018.9.25-22:29:35
+
+ INFO: Time:write function total Run:46microseconds.
+:53
+2018.9.25-22:29:35
+
+ INFO: Time:Accept function total Run:67612microseconds.
+:54
+2018.9.25-22:29:35
+
+ INFO: Time:fork functrion total Run:1272microseconds.
+:54
+2018.9.25-22:29:35
+
+ INFO: Time:Accept function total Run:18microseconds.
+:55
+2018.9.25-22:29:35
+
+ INFO: Time:fork functrion total Run:1618microseconds.
+:54
+2018.9.25-22:29:35
+
+ INFO: Time:read function total Run:777microseconds.
+:54
+2018.9.25-22:29:35
+
+ INFO: Time:fork functrion total Run:1236microseconds.
+:55
+2018.9.25-22:29:35
+
+ INFO: request:GET / HTTP/1.1**Host: 127.0.0.1:8080**Connection: keep-alive**Cache-Control: max-age=0**Upgrade-Insecure-Requests: 1**User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36**Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8**Accept-Encoding: gzip, deflate, br**Accept-Language: zh-CN,zh;q=0.9,ja;q=0.8,en-US;q=0.7,en;q=0.6****:54
+2018.9.25-22:29:35
+
+ INFO: SEND:index.html:54
+2018.9.25-22:29:35
+
+ INFO: Time:fork functrion total Run:1546microseconds.
+:55
+2018.9.25-22:29:35
+
+ INFO: Header:HTTP/1.1 200 OK
+Server: Rypers/1.0
+Content-Length: 311
+Connection: close
+Content-Type: text/html
+
+:54
+2018.9.25-22:29:35
+
+ INFO: Time:write function total Run:20microseconds.
+:54
+2018.9.25-22:29:35
+
+ INFO: Time:read function total Run:19711microseconds.
+:55
+2018.9.25-22:29:35
+
+ INFO: request:GET /example.jpg HTTP/1.1**Host: 127.0.0.1:8080**Connection: keep-alive**User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36**Accept: image/webp,image/apng,image/*,*/*;q=0.8**Referer: http://127.0.0.1:8080/**Accept-Encoding: gzip, deflate, br**Accept-Language: zh-CN,zh;q=0.9,ja;q=0.8,en-US;q=0.7,en;q=0.6****:55
+2018.9.25-22:29:35
+
+ INFO: SEND:example.jpg:55
+2018.9.25-22:29:35
+
+ INFO: Header:HTTP/1.1 200 OK
+Server: Rypers/1.0
+Content-Length: 1249334
+Connection: close
+Content-Type: image/jpg
+
+:55
+2018.9.25-22:29:35
+
+ INFO: Time:write function total Run:30805microseconds.
+:55
+2018.9.25-22:29:35
+
+ INFO: Time:Accept function total Run:117350microseconds.
+:56
+2018.9.25-22:29:35
+
+ INFO: Time:fork functrion total Run:1245microseconds.
+:56
+2018.9.25-22:29:35
+
+ INFO: Time:fork functrion total Run:1797microseconds.
+:56
+2018.9.25-22:29:35
+
+ INFO: Time:read function total Run:108microseconds.
+:56
+2018.9.25-22:29:35
+
+ INFO: request:GET /example.jpg HTTP/1.1**Host: 127.0.0.1:8080**Connection: keep-alive**User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36**Accept: image/webp,image/apng,image/*,*/*;q=0.8**Referer: http://127.0.0.1:8080/**Accept-Encoding: gzip, deflate, br**Accept-Language: zh-CN,zh;q=0.9,ja;q=0.8,en-US;q=0.7,en;q=0.6****:56
+2018.9.25-22:29:35
+
+ INFO: SEND:example.jpg:56
+2018.9.25-22:29:35
+
+ INFO: Header:HTTP/1.1 200 OK
+Server: Rypers/1.0
+Content-Length: 1249334
+Connection: close
+Content-Type: image/jpg
+
+:56
+2018.9.25-22:29:35
+
+ INFO: Time:write function total Run:29933microseconds.
+:56
+2018.9.25-22:29:36
+
+ INFO: Time:Accept function total Run:55228microseconds.
+:57
+2018.9.25-22:29:36
+
+ INFO: Time:fork functrion total Run:1411microseconds.
+:57
+2018.9.25-22:29:36
+
+ INFO: Time:fork functrion total Run:1705microseconds.
+:57
+2018.9.25-22:29:36
+
+ INFO: Time:read function total Run:122microseconds.
+:57
+2018.9.25-22:29:36
+
+ INFO: request:GET / HTTP/1.1**Host: 127.0.0.1:8080**Connection: keep-alive**Cache-Control: max-age=0**Upgrade-Insecure-Requests: 1**User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36**Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8**Accept-Encoding: gzip, deflate, br**Accept-Language: zh-CN,zh;q=0.9,ja;q=0.8,en-US;q=0.7,en;q=0.6****:57
+2018.9.25-22:29:36
+
+ INFO: SEND:index.html:57
+2018.9.25-22:29:36
+
+ INFO: Header:HTTP/1.1 200 OK
+Server: Rypers/1.0
+Content-Length: 311
+Connection: close
+Content-Type: text/html
+
+:57
+2018.9.25-22:29:36
+
+ INFO: Time:write function total Run:48microseconds.
+:57
+2018.9.25-22:29:36
+
+ INFO: Time:Accept function total Run:107769microseconds.
+:58
+2018.9.25-22:29:36
+
+ INFO: Time:fork functrion total Run:1582microseconds.
+:58
+2018.9.25-22:29:36
+
+ INFO: Time:Accept function total Run:21microseconds.
+:59
+2018.9.25-22:29:36
+
+ INFO: Time:fork functrion total Run:2675microseconds.
+:58
+2018.9.25-22:29:36
+
+ INFO: Time:read function total Run:98microseconds.
+:58
+2018.9.25-22:29:36
+
+ INFO: request:GET / HTTP/1.1**Host: 127.0.0.1:8080**Connection: keep-alive**Cache-Control: max-age=0**Upgrade-Insecure-Requests: 1**User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36**Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8**Accept-Encoding: gzip, deflate, br**Accept-Language: zh-CN,zh;q=0.9,ja;q=0.8,en-US;q=0.7,en;q=0.6****:58
+2018.9.25-22:29:36
+
+ INFO: SEND:index.html:58
+2018.9.25-22:29:36
+
+ INFO: Header:HTTP/1.1 200 OK
+Server: Rypers/1.0
+Content-Length: 311
+Connection: close
+Content-Type: text/html
+
+:58
+2018.9.25-22:29:36
+
+ INFO: Time:write function total Run:27microseconds.
+:58
+2018.9.25-22:29:36
+
+ INFO: Time:fork functrion total Run:3005microseconds.
+:59
+2018.9.25-22:29:36
+
+ INFO: Time:fork functrion total Run:3822microseconds.
+:59
+2018.9.25-22:29:36
+
+ INFO: Time:read function total Run:6317microseconds.
+:59
+2018.9.25-22:29:36
+
+ INFO: request:GET /example.jpg HTTP/1.1**Host: 127.0.0.1:8080**Connection: keep-alive**User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36**Accept: image/webp,image/apng,image/*,*/*;q=0.8**Referer: http://127.0.0.1:8080/**Accept-Encoding: gzip, deflate, br**Accept-Language: zh-CN,zh;q=0.9,ja;q=0.8,en-US;q=0.7,en;q=0.6****:59
+2018.9.25-22:29:36
+
+ INFO: SEND:example.jpg:59
+2018.9.25-22:29:36
+
+ INFO: Header:HTTP/1.1 200 OK
+Server: Rypers/1.0
+Content-Length: 1249334
+Connection: close
+Content-Type: image/jpg
+
+:59
+2018.9.25-22:29:36
+
+ INFO: Time:write function total Run:23549microseconds.
+:59
+2018.9.25-22:29:36
+
+ INFO: Time:Accept function total Run:136409microseconds.
+:60
+2018.9.25-22:29:36
+
+ INFO: Time:fork functrion total Run:1315microseconds.
+:60
+2018.9.25-22:29:36
+
+ INFO: Time:fork functrion total Run:1559microseconds.
+:60
+2018.9.25-22:29:36
+
+ INFO: Time:read function total Run:91microseconds.
+:60
+2018.9.25-22:29:36
+
+ INFO: request:GET /example.jpg HTTP/1.1**Host: 127.0.0.1:8080**Connection: keep-alive**User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36**Accept: image/webp,image/apng,image/*,*/*;q=0.8**Referer: http://127.0.0.1:8080/**Accept-Encoding: gzip, deflate, br**Accept-Language: zh-CN,zh;q=0.9,ja;q=0.8,en-US;q=0.7,en;q=0.6****:60
+2018.9.25-22:29:36
+
+ INFO: SEND:example.jpg:60
+2018.9.25-22:29:36
+
+ INFO: Header:HTTP/1.1 200 OK
+Server: Rypers/1.0
+Content-Length: 1249334
+Connection: close
+Content-Type: image/jpg
+
+:60
+2018.9.25-22:29:36
+
+ INFO: Time:write function total Run:137567microseconds.
+:60
+2018.9.25-22:29:36
+
+ INFO: Time:Accept function total Run:171688microseconds.
+:61
+2018.9.25-22:29:36
+
+ INFO: Time:fork functrion total Run:391microseconds.
+:61
+2018.9.25-22:29:36
+
+ INFO: Time:Accept function total Run:20microseconds.
+:62
+2018.9.25-22:29:36
+
+ INFO: Time:fork functrion total Run:638microseconds.
+:61
+2018.9.25-22:29:36
+
+ INFO: Time:fork functrion total Run:337microseconds.
+:62
+2018.9.25-22:29:36
+
+ INFO: Time:fork functrion total Run:556microseconds.
+:62
+2018.9.25-22:29:36
+
+ INFO: Time:read function total Run:632microseconds.
+:61
+2018.9.25-22:29:36
+
+ INFO: request:GET / HTTP/1.1**Host: 127.0.0.1:8080**Connection: keep-alive**Cache-Control: max-age=0**Upgrade-Insecure-Requests: 1**User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36**Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8**Accept-Encoding: gzip, deflate, br**Accept-Language: zh-CN,zh;q=0.9,ja;q=0.8,en-US;q=0.7,en;q=0.6****:61
+2018.9.25-22:29:36
+
+ INFO: SEND:index.html:61
+2018.9.25-22:29:36
+
+ INFO: Header:HTTP/1.1 200 OK
+Server: Rypers/1.0
+Content-Length: 311
+Connection: close
+Content-Type: text/html
+
+:61
+2018.9.25-22:29:36
+
+ INFO: Time:write function total Run:34microseconds.
+:61
+2018.9.25-22:29:36
+
+ INFO: Time:read function total Run:41515microseconds.
+:62
+2018.9.25-22:29:36
+
+ INFO: request:GET /example.jpg HTTP/1.1**Host: 127.0.0.1:8080**Connection: keep-alive**User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36**Accept: image/webp,image/apng,image/*,*/*;q=0.8**Referer: http://127.0.0.1:8080/**Accept-Encoding: gzip, deflate, br**Accept-Language: zh-CN,zh;q=0.9,ja;q=0.8,en-US;q=0.7,en;q=0.6****:62
+2018.9.25-22:29:36
+
+ INFO: SEND:example.jpg:62
+2018.9.25-22:29:36
+
+ INFO: Header:HTTP/1.1 200 OK
+Server: Rypers/1.0
+Content-Length: 1249334
+Connection: close
+Content-Type: image/jpg
+
+:62
+2018.9.25-22:29:36
+
+ INFO: Time:write function total Run:131585microseconds.
+:62
+2018.9.25-22:29:36
+
+ INFO: Time:Accept function total Run:183034microseconds.
+:63
+2018.9.25-22:29:36
+
+ INFO: Time:fork functrion total Run:1394microseconds.
+:63
+2018.9.25-22:29:36
+
+ INFO: Time:fork functrion total Run:1775microseconds.
+:63
+2018.9.25-22:29:36
+
+ INFO: Time:read function total Run:2804microseconds.
+:63
+2018.9.25-22:29:36
+
+ INFO: request:GET / HTTP/1.1**Host: 127.0.0.1:8080**Connection: keep-alive**Cache-Control: max-age=0**Upgrade-Insecure-Requests: 1**User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36**Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8**Accept-Encoding: gzip, deflate, br**Accept-Language: zh-CN,zh;q=0.9,ja;q=0.8,en-US;q=0.7,en;q=0.6****:63
+2018.9.25-22:29:36
+
+ INFO: SEND:index.html:63
+2018.9.25-22:29:36
+
+ INFO: Header:HTTP/1.1 200 OK
+Server: Rypers/1.0
+Content-Length: 311
+Connection: close
+Content-Type: text/html
+
+:63
+2018.9.25-22:29:36
+
+ INFO: Time:write function total Run:40microseconds.
+:63
+2018.9.25-22:29:36
+
+ INFO: Time:Accept function total Run:71229microseconds.
+:64
+2018.9.25-22:29:36
+
+ INFO: Time:fork functrion total Run:2137microseconds.
+:64
+2018.9.25-22:29:36
+
+ INFO: Time:fork functrion total Run:2385microseconds.
+:64
+2018.9.25-22:29:36
+
+ INFO: Time:Accept function total Run:40microseconds.
+:65
+2018.9.25-22:29:36
+
+ INFO: Time:fork functrion total Run:1318microseconds.
+:65
+2018.9.25-22:29:36
+
+ INFO: Time:read function total Run:1991microseconds.
+:64
+2018.9.25-22:29:36
+
+ INFO: Time:fork functrion total Run:1575microseconds.
+:65
+2018.9.25-22:29:36
+
+ INFO: request:GET / HTTP/1.1**Host: 127.0.0.1:8080**Connection: keep-alive**Cache-Control: max-age=0**Upgrade-Insecure-Requests: 1**User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36**Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8**Accept-Encoding: gzip, deflate, br**Accept-Language: zh-CN,zh;q=0.9,ja;q=0.8,en-US;q=0.7,en;q=0.6****:64
+2018.9.25-22:29:36
+
+ INFO: SEND:index.html:64
+2018.9.25-22:29:36
+
+ INFO: Header:HTTP/1.1 200 OK
+Server: Rypers/1.0
+Content-Length: 311
+Connection: close
+Content-Type: text/html
+
+:64
+2018.9.25-22:29:36
+
+ INFO: Time:write function total Run:30microseconds.
+:64
+2018.9.25-22:29:36
+
+ INFO: Time:read function total Run:58948microseconds.
+:65
+2018.9.25-22:29:36
+
+ INFO: request:GET /example.jpg HTTP/1.1**Host: 127.0.0.1:8080**Connection: keep-alive**User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36**Accept: image/webp,image/apng,image/*,*/*;q=0.8**Referer: http://127.0.0.1:8080/**Accept-Encoding: gzip, deflate, br**Accept-Language: zh-CN,zh;q=0.9,ja;q=0.8,en-US;q=0.7,en;q=0.6****:65
+2018.9.25-22:29:36
+
+ INFO: SEND:example.jpg:65
+2018.9.25-22:29:36
+
+ INFO: Header:HTTP/1.1 200 OK
+Server: Rypers/1.0
+Content-Length: 1249334
+Connection: close
+Content-Type: image/jpg
+
+:65
+2018.9.25-22:29:36
+
+ INFO: Time:write function total Run:23446microseconds.
+:65
+2018.9.25-22:29:36
+
+ INFO: Time:Accept function total Run:252496microseconds.
+:66
+2018.9.25-22:29:36
+
+ INFO: Time:fork functrion total Run:1258microseconds.
+:66
+2018.9.25-22:29:36
+
+ INFO: Time:fork functrion total Run:1658microseconds.
+:66
+2018.9.25-22:29:36
+
+ INFO: Time:read function total Run:636microseconds.
+:66
+2018.9.25-22:29:36
+
+ INFO: request:GET / HTTP/1.1**Host: 127.0.0.1:8080**Connection: keep-alive**Cache-Control: max-age=0**Upgrade-Insecure-Requests: 1**User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36**Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8**Accept-Encoding: gzip, deflate, br**Accept-Language: zh-CN,zh;q=0.9,ja;q=0.8,en-US;q=0.7,en;q=0.6****:66
+2018.9.25-22:29:36
+
+ INFO: SEND:index.html:66
+2018.9.25-22:29:36
+
+ INFO: Header:HTTP/1.1 200 OK
+Server: Rypers/1.0
+Content-Length: 311
+Connection: close
+Content-Type: text/html
+
+:66
+2018.9.25-22:29:36
+
+ INFO: Time:write function total Run:33microseconds.
+:66
+2018.9.25-22:29:36
+
+ INFO: Time:Accept function total Run:30120microseconds.
+:67
+2018.9.25-22:29:36
+
+ INFO: Time:fork functrion total Run:236microseconds.
+:67
+2018.9.25-22:29:36
+
+ INFO: Time:Accept function total Run:12microseconds.
+:68
+2018.9.25-22:29:36
+
+ INFO: Time:fork functrion total Run:472microseconds.
+:67
+2018.9.25-22:29:36
+
+ INFO: Time:fork functrion total Run:419microseconds.
+:68
+2018.9.25-22:29:36
+
+ INFO: Time:fork functrion total Run:619microseconds.
+:68
+2018.9.25-22:29:36
+
+ INFO: Time:read function total Run:603microseconds.
+:67
+2018.9.25-22:29:36
+
+ INFO: request:GET / HTTP/1.1**Host: 127.0.0.1:8080**Connection: keep-alive**Cache-Control: max-age=0**Upgrade-Insecure-Requests: 1**User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36**Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8**Accept-Encoding: gzip, deflate, br**Accept-Language: zh-CN,zh;q=0.9,ja;q=0.8,en-US;q=0.7,en;q=0.6****:67
+2018.9.25-22:29:36
+
+ INFO: SEND:index.html:67
+2018.9.25-22:29:36
+
+ INFO: Header:HTTP/1.1 200 OK
+Server: Rypers/1.0
+Content-Length: 311
+Connection: close
+Content-Type: text/html
+
+:67
+2018.9.25-22:29:36
+
+ INFO: Time:write function total Run:34microseconds.
+:67
+2018.9.25-22:29:37
+
+ INFO: Time:read function total Run:42366microseconds.
+:68
+2018.9.25-22:29:37
+
+ INFO: request:GET /example.jpg HTTP/1.1**Host: 127.0.0.1:8080**Connection: keep-alive**User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36**Accept: image/webp,image/apng,image/*,*/*;q=0.8**Referer: http://127.0.0.1:8080/**Accept-Encoding: gzip, deflate, br**Accept-Language: zh-CN,zh;q=0.9,ja;q=0.8,en-US;q=0.7,en;q=0.6****:68
+2018.9.25-22:29:37
+
+ INFO: SEND:example.jpg:68
+2018.9.25-22:29:37
+
+ INFO: Header:HTTP/1.1 200 OK
+Server: Rypers/1.0
+Content-Length: 1249334
+Connection: close
+Content-Type: image/jpg
+
+:68
+2018.9.25-22:29:37
+
+ INFO: Time:write function total Run:19139microseconds.
+:68
+2018.9.25-22:29:37
+
+ INFO: Time:Accept function total Run:202964microseconds.
+:69
+2018.9.25-22:29:37
+
+ INFO: Time:fork functrion total Run:1240microseconds.
+:69
+2018.9.25-22:29:37
+
+ INFO: Time:fork functrion total Run:1536microseconds.
+:69
+2018.9.25-22:29:37
+
+ INFO: Time:read function total Run:4392microseconds.
+:69
+2018.9.25-22:29:37
+
+ INFO: request:GET / HTTP/1.1**Host: 127.0.0.1:8080**Connection: keep-alive**Cache-Control: max-age=0**Upgrade-Insecure-Requests: 1**User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36**Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8**Accept-Encoding: gzip, deflate, br**Accept-Language: zh-CN,zh;q=0.9,ja;q=0.8,en-US;q=0.7,en;q=0.6****:69
+2018.9.25-22:29:37
+
+ INFO: SEND:index.html:69
+2018.9.25-22:29:37
+
+ INFO: Header:HTTP/1.1 200 OK
+Server: Rypers/1.0
+Content-Length: 311
+Connection: close
+Content-Type: text/html
+
+:69
+2018.9.25-22:29:37
+
+ INFO: Time:write function total Run:27microseconds.
+:69
+2018.9.25-22:29:37
+
+ INFO: Time:Accept function total Run:37983microseconds.
+:70
+2018.9.25-22:29:37
+
+ INFO: Time:fork functrion total Run:1241microseconds.
+:70
+2018.9.25-22:29:37
+
+ INFO: Time:fork functrion total Run:1551microseconds.
+:70
+2018.9.25-22:29:37
+
+ INFO: Time:read function total Run:90microseconds.
+:70
+2018.9.25-22:29:37
+
+ INFO: request:GET /example.jpg HTTP/1.1**Host: 127.0.0.1:8080**Connection: keep-alive**User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36**Accept: image/webp,image/apng,image/*,*/*;q=0.8**Referer: http://127.0.0.1:8080/**Accept-Encoding: gzip, deflate, br**Accept-Language: zh-CN,zh;q=0.9,ja;q=0.8,en-US;q=0.7,en;q=0.6****:70
+2018.9.25-22:29:37
+
+ INFO: SEND:example.jpg:70
+2018.9.25-22:29:37
+
+ INFO: Header:HTTP/1.1 200 OK
+Server: Rypers/1.0
+Content-Length: 1249334
+Connection: close
+Content-Type: image/jpg
+
+:70
+2018.9.25-22:29:37
+
+ INFO: Time:write function total Run:2979microseconds.
+:70
+2018.9.25-22:29:37
+
+ INFO: Time:Accept function total Run:131797microseconds.
+:71
+2018.9.25-22:29:37
+
+ INFO: Time:fork functrion total Run:1482microseconds.
+:71
+2018.9.25-22:29:37
+
+ INFO: Time:fork functrion total Run:2245microseconds.
+:71
+2018.9.25-22:29:37
+
+ INFO: Time:read function total Run:943microseconds.
+:71
+2018.9.25-22:29:37
+
+ INFO: request:GET / HTTP/1.1**Host: 127.0.0.1:8080**Connection: keep-alive**Cache-Control: max-age=0**Upgrade-Insecure-Requests: 1**User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36**Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8**Accept-Encoding: gzip, deflate, br**Accept-Language: zh-CN,zh;q=0.9,ja;q=0.8,en-US;q=0.7,en;q=0.6****:71
+2018.9.25-22:29:37
+
+ INFO: SEND:index.html:71
+2018.9.25-22:29:37
+
+ INFO: Header:HTTP/1.1 200 OK
+Server: Rypers/1.0
+Content-Length: 311
+Connection: close
+Content-Type: text/html
+
+:71
+2018.9.25-22:29:37
+
+ INFO: Time:write function total Run:51microseconds.
+:71
+2018.9.25-22:29:37
+
+ INFO: Time:Accept function total Run:64652microseconds.
+:72
+2018.9.25-22:29:37
+
+ INFO: Time:fork functrion total Run:958microseconds.
+:72
+2018.9.25-22:29:37
+
+ INFO: Time:fork functrion total Run:1216microseconds.
+:72
+2018.9.25-22:29:37
+
+ INFO: Time:read function total Run:1408microseconds.
+:72
+2018.9.25-22:29:37
+
+ INFO: request:GET / HTTP/1.1**Host: 127.0.0.1:8080**Connection: keep-alive**Cache-Control: max-age=0**Upgrade-Insecure-Requests: 1**User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36**Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8**Accept-Encoding: gzip, deflate, br**Accept-Language: zh-CN,zh;q=0.9,ja;q=0.8,en-US;q=0.7,en;q=0.6****:72
+2018.9.25-22:29:37
+
+ INFO: SEND:index.html:72
+2018.9.25-22:29:37
+
+ INFO: Header:HTTP/1.1 200 OK
+Server: Rypers/1.0
+Content-Length: 311
+Connection: close
+Content-Type: text/html
+
+:72
+2018.9.25-22:29:37
+
+ INFO: Time:write function total Run:65microseconds.
+:72
+2018.9.25-22:29:37
+
+ INFO: Time:Accept function total Run:19219microseconds.
+:73
+2018.9.25-22:29:37
+
+ INFO: Time:fork functrion total Run:294microseconds.
+:73
+2018.9.25-22:29:37
+
+ INFO: Time:fork functrion total Run:519microseconds.
+:73
+2018.9.25-22:29:37
+
+ INFO: Time:read function total Run:99microseconds.
+:73
+2018.9.25-22:29:37
+
+ INFO: request:GET /example.jpg HTTP/1.1**Host: 127.0.0.1:8080**Connection: keep-alive**User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36**Accept: image/webp,image/apng,image/*,*/*;q=0.8**Referer: http://127.0.0.1:8080/**Accept-Encoding: gzip, deflate, br**Accept-Language: zh-CN,zh;q=0.9,ja;q=0.8,en-US;q=0.7,en;q=0.6****:73
+2018.9.25-22:29:37
+
+ INFO: SEND:example.jpg:73
+2018.9.25-22:29:37
+
+ INFO: Header:HTTP/1.1 200 OK
+Server: Rypers/1.0
+Content-Length: 1249334
+Connection: close
+Content-Type: image/jpg
+
+:73
+2018.9.25-22:29:37
+
+ INFO: Time:write function total Run:21785microseconds.
+:73
+2018.9.25-22:29:37
+
+ INFO: Time:Accept function total Run:71252microseconds.
+:74
+2018.9.25-22:29:37
+
+ INFO: Time:fork functrion total Run:1375microseconds.
+:74
+2018.9.25-22:29:37
+
+ INFO: Time:fork functrion total Run:1630microseconds.
+:74
+2018.9.25-22:29:37
+
+ INFO: Time:read function total Run:128microseconds.
+:74
+2018.9.25-22:29:37
+
+ INFO: request:GET /example.jpg HTTP/1.1**Host: 127.0.0.1:8080**Connection: keep-alive**User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36**Accept: image/webp,image/apng,image/*,*/*;q=0.8**Referer: http://127.0.0.1:8080/**Accept-Encoding: gzip, deflate, br**Accept-Language: zh-CN,zh;q=0.9,ja;q=0.8,en-US;q=0.7,en;q=0.6****:74
+2018.9.25-22:29:37
+
+ INFO: SEND:example.jpg:74
+2018.9.25-22:29:37
+
+ INFO: Header:HTTP/1.1 200 OK
+Server: Rypers/1.0
+Content-Length: 1249334
+Connection: close
+Content-Type: image/jpg
+
+:74
+2018.9.25-22:29:37
+
+ INFO: Time:write function total Run:170637microseconds.
+:74
+2018.9.25-22:29:37
+
+ INFO: Time:Accept function total Run:203410microseconds.
+:75
+2018.9.25-22:29:37
+
+ INFO: Time:fork functrion total Run:1266microseconds.
+:75
+2018.9.25-22:29:37
+
+ INFO: Time:Accept function total Run:18microseconds.
+:76
+2018.9.25-22:29:37
+
+ INFO: Time:fork functrion total Run:1592microseconds.
+:75
+2018.9.25-22:29:37
+
+ INFO: Time:fork functrion total Run:577microseconds.
+:76
+2018.9.25-22:29:37
+
+ INFO: Time:fork functrion total Run:864microseconds.
+:76
+2018.9.25-22:29:37
+
+ INFO: Time:read function total Run:2245microseconds.
+:75
+2018.9.25-22:29:37
+
+ INFO: request:GET / HTTP/1.1**Host: 127.0.0.1:8080**Connection: keep-alive**Cache-Control: max-age=0**Upgrade-Insecure-Requests: 1**User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36**Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8**Accept-Encoding: gzip, deflate, br**Accept-Language: zh-CN,zh;q=0.9,ja;q=0.8,en-US;q=0.7,en;q=0.6****:75
+2018.9.25-22:29:37
+
+ INFO: SEND:index.html:75
+2018.9.25-22:29:37
+
+ INFO: Header:HTTP/1.1 200 OK
+Server: Rypers/1.0
+Content-Length: 311
+Connection: close
+Content-Type: text/html
+
+:75
+2018.9.25-22:29:37
+
+ INFO: Time:write function total Run:24microseconds.
+:75
+2018.9.25-22:29:37
+
+ INFO: Time:read function total Run:43984microseconds.
+:76
+2018.9.25-22:29:37
+
+ INFO: request:GET /example.jpg HTTP/1.1**Host: 127.0.0.1:8080**Connection: keep-alive**User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36**Accept: image/webp,image/apng,image/*,*/*;q=0.8**Referer: http://127.0.0.1:8080/**Accept-Encoding: gzip, deflate, br**Accept-Language: zh-CN,zh;q=0.9,ja;q=0.8,en-US;q=0.7,en;q=0.6****:76
+2018.9.25-22:29:37
+
+ INFO: SEND:example.jpg:76
+2018.9.25-22:29:37
+
+ INFO: Header:HTTP/1.1 200 OK
+Server: Rypers/1.0
+Content-Length: 1249334
+Connection: close
+Content-Type: image/jpg
+
+:76
+2018.9.25-22:29:37
+
+ INFO: Time:write function total Run:31196microseconds.
+:76
+2018.9.25-22:29:37
+
+ INFO: Time:Accept function total Run:135028microseconds.
+:77
+2018.9.25-22:29:37
+
+ INFO: Time:fork functrion total Run:1462microseconds.
+:77
+2018.9.25-22:29:37
+
+ INFO: Time:fork functrion total Run:2136microseconds.
+:77
+2018.9.25-22:29:37
+
+ INFO: Time:read function total Run:1050microseconds.
+:77
+2018.9.25-22:29:37
+
+ INFO: request:GET / HTTP/1.1**Host: 127.0.0.1:8080**Connection: keep-alive**Cache-Control: max-age=0**Upgrade-Insecure-Requests: 1**User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36**Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8**Accept-Encoding: gzip, deflate, br**Accept-Language: zh-CN,zh;q=0.9,ja;q=0.8,en-US;q=0.7,en;q=0.6****:77
+2018.9.25-22:29:37
+
+ INFO: SEND:index.html:77
+2018.9.25-22:29:37
+
+ INFO: Header:HTTP/1.1 200 OK
+Server: Rypers/1.0
+Content-Length: 311
+Connection: close
+Content-Type: text/html
+
+:77
+2018.9.25-22:29:37
+
+ INFO: Time:write function total Run:45microseconds.
+:77
+2018.9.25-22:29:37
+
+ INFO: Time:Accept function total Run:93395microseconds.
+:78
+2018.9.25-22:29:37
+
+ INFO: Time:fork functrion total Run:337microseconds.
+:78
+2018.9.25-22:29:37
+
+ INFO: Time:Accept function total Run:13microseconds.
+:79
+2018.9.25-22:29:37
+
+ INFO: Time:fork functrion total Run:596microseconds.
+:78
+2018.9.25-22:29:37
+
+ INFO: Time:fork functrion total Run:399microseconds.
+:79
+2018.9.25-22:29:37
+
+ INFO: Time:fork functrion total Run:601microseconds.
+:79
+2018.9.25-22:29:37
+
+ INFO: Time:read function total Run:481microseconds.
+:78
+2018.9.25-22:29:37
+
+ INFO: request:GET / HTTP/1.1**Host: 127.0.0.1:8080**Connection: keep-alive**Cache-Control: max-age=0**Upgrade-Insecure-Requests: 1**User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36**Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8**Accept-Encoding: gzip, deflate, br**Accept-Language: zh-CN,zh;q=0.9,ja;q=0.8,en-US;q=0.7,en;q=0.6****:78
+2018.9.25-22:29:37
+
+ INFO: SEND:index.html:78
+2018.9.25-22:29:37
+
+ INFO: Header:HTTP/1.1 200 OK
+Server: Rypers/1.0
+Content-Length: 311
+Connection: close
+Content-Type: text/html
+
+:78
+2018.9.25-22:29:37
+
+ INFO: Time:write function total Run:34microseconds.
+:78
+2018.9.25-22:29:37
+
+ INFO: Time:read function total Run:13533microseconds.
+:79
+2018.9.25-22:29:37
+
+ INFO: request:GET /example.jpg HTTP/1.1**Host: 127.0.0.1:8080**Connection: keep-alive**User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36**Accept: image/webp,image/apng,image/*,*/*;q=0.8**Referer: http://127.0.0.1:8080/**Accept-Encoding: gzip, deflate, br**Accept-Language: zh-CN,zh;q=0.9,ja;q=0.8,en-US;q=0.7,en;q=0.6****:79
+2018.9.25-22:29:37
+
+ INFO: SEND:example.jpg:79
+2018.9.25-22:29:37
+
+ INFO: Header:HTTP/1.1 200 OK
+Server: Rypers/1.0
+Content-Length: 1249334
+Connection: close
+Content-Type: image/jpg
+
+:79
+2018.9.25-22:29:37
+
+ INFO: Time:write function total Run:14014microseconds.
+:79
+2018.9.25-22:29:38
+
+ INFO: Time:Accept function total Run:81626microseconds.
+:80
+2018.9.25-22:29:38
+
+ INFO: Time:fork functrion total Run:1003microseconds.
+:80
+2018.9.25-22:29:38
+
+ INFO: Time:fork functrion total Run:1262microseconds.
+:80
+2018.9.25-22:29:38
+
+ INFO: Time:read function total Run:93microseconds.
+:80
+2018.9.25-22:29:38
+
+ INFO: request:GET /example.jpg HTTP/1.1**Host: 127.0.0.1:8080**Connection: keep-alive**User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36**Accept: image/webp,image/apng,image/*,*/*;q=0.8**Referer: http://127.0.0.1:8080/**Accept-Encoding: gzip, deflate, br**Accept-Language: zh-CN,zh;q=0.9,ja;q=0.8,en-US;q=0.7,en;q=0.6****:80
+2018.9.25-22:29:38
+
+ INFO: SEND:example.jpg:80
+2018.9.25-22:29:38
+
+ INFO: Header:HTTP/1.1 200 OK
+Server: Rypers/1.0
+Content-Length: 1249334
+Connection: close
+Content-Type: image/jpg
+
+:80
+2018.9.25-22:29:38
+
+ INFO: Time:write function total Run:158347microseconds.
+:80
+2018.9.25-22:29:38
+
+ INFO: Time:Accept function total Run:166169microseconds.
+:81
+2018.9.25-22:29:38
+
+ INFO: Time:fork functrion total Run:628microseconds.
+:81
+2018.9.25-22:29:38
+
+ INFO: Time:fork functrion total Run:1147microseconds.
+:81
+2018.9.25-22:29:38
+
+ INFO: Time:read function total Run:3608microseconds.
+:81
+2018.9.25-22:29:38
+
+ INFO: request:GET / HTTP/1.1**Host: 127.0.0.1:8080**Connection: keep-alive**Cache-Control: max-age=0**Upgrade-Insecure-Requests: 1**User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36**Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8**Accept-Encoding: gzip, deflate, br**Accept-Language: zh-CN,zh;q=0.9,ja;q=0.8,en-US;q=0.7,en;q=0.6****:81
+2018.9.25-22:29:38
+
+ INFO: SEND:index.html:81
+2018.9.25-22:29:38
+
+ INFO: Header:HTTP/1.1 200 OK
+Server: Rypers/1.0
+Content-Length: 311
+Connection: close
+Content-Type: text/html
+
+:81
+2018.9.25-22:29:38
+
+ INFO: Time:write function total Run:75microseconds.
+:81
+2018.9.25-22:29:38
+
+ INFO: Time:Accept function total Run:25040microseconds.
+:82
+2018.9.25-22:29:38
+
+ INFO: Time:fork functrion total Run:234microseconds.
+:82
+2018.9.25-22:29:38
+
+ INFO: Time:Accept function total Run:12microseconds.
+:83
+2018.9.25-22:29:38
+
+ INFO: Time:fork functrion total Run:496microseconds.
+:82
+2018.9.25-22:29:38
+
+ INFO: Time:fork functrion total Run:196microseconds.
+:83
+2018.9.25-22:29:38
+
+ INFO: Time:fork functrion total Run:416microseconds.
+:83
+2018.9.25-22:29:38
+
+ INFO: Time:read function total Run:682microseconds.
+:82
+2018.9.25-22:29:38
+
+ INFO: request:GET / HTTP/1.1**Host: 127.0.0.1:8080**Connection: keep-alive**Cache-Control: max-age=0**Upgrade-Insecure-Requests: 1**User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36**Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8**Accept-Encoding: gzip, deflate, br**Accept-Language: zh-CN,zh;q=0.9,ja;q=0.8,en-US;q=0.7,en;q=0.6****:82
+2018.9.25-22:29:38
+
+ INFO: SEND:index.html:82
+2018.9.25-22:29:38
+
+ INFO: Header:HTTP/1.1 200 OK
+Server: Rypers/1.0
+Content-Length: 311
+Connection: close
+Content-Type: text/html
+
+:82
+2018.9.25-22:29:38
+
+ INFO: Time:write function total Run:19microseconds.
+:82
+2018.9.25-22:29:38
+
+ INFO: Time:read function total Run:34643microseconds.
+:83
+2018.9.25-22:29:38
+
+ INFO: request:GET /example.jpg HTTP/1.1**Host: 127.0.0.1:8080**Connection: keep-alive**User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36**Accept: image/webp,image/apng,image/*,*/*;q=0.8**Referer: http://127.0.0.1:8080/**Accept-Encoding: gzip, deflate, br**Accept-Language: zh-CN,zh;q=0.9,ja;q=0.8,en-US;q=0.7,en;q=0.6****:83
+2018.9.25-22:29:38
+
+ INFO: SEND:example.jpg:83
+2018.9.25-22:29:38
+
+ INFO: Header:HTTP/1.1 200 OK
+Server: Rypers/1.0
+Content-Length: 1249334
+Connection: close
+Content-Type: image/jpg
+
+:83
+2018.9.25-22:29:38
+
+ INFO: Time:write function total Run:28649microseconds.
+:83
+2018.9.25-22:29:38
+
+ INFO: Time:Accept function total Run:147910microseconds.
+:84
+2018.9.25-22:29:38
+
+ INFO: Time:fork functrion total Run:660microseconds.
+:84
+2018.9.25-22:29:38
+
+ INFO: Time:fork functrion total Run:1141microseconds.
+:84
+2018.9.25-22:29:38
+
+ INFO: Time:read function total Run:9067microseconds.
+:84
+2018.9.25-22:29:38
+
+ INFO: request:GET / HTTP/1.1**Host: 127.0.0.1:8080**Connection: keep-alive**Cache-Control: max-age=0**Upgrade-Insecure-Requests: 1**User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36**Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8**Accept-Encoding: gzip, deflate, br**Accept-Language: zh-CN,zh;q=0.9,ja;q=0.8,en-US;q=0.7,en;q=0.6****:84
+2018.9.25-22:29:38
+
+ INFO: SEND:index.html:84
+2018.9.25-22:29:38
+
+ INFO: Header:HTTP/1.1 200 OK
+Server: Rypers/1.0
+Content-Length: 311
+Connection: close
+Content-Type: text/html
+
+:84
+2018.9.25-22:29:38
+
+ INFO: Time:write function total Run:246microseconds.
+:84
+2018.9.25-22:29:38
+
+ INFO: Time:Accept function total Run:51409microseconds.
+:85
+2018.9.25-22:29:38
+
+ INFO: Time:fork functrion total Run:1218microseconds.
+:85
+2018.9.25-22:29:38
+
+ INFO: Time:fork functrion total Run:1461microseconds.
+:85
+2018.9.25-22:29:38
+
+ INFO: Time:read function total Run:86microseconds.
+:85
+2018.9.25-22:29:38
+
+ INFO: request:GET /example.jpg HTTP/1.1**Host: 127.0.0.1:8080**Connection: keep-alive**User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36**Accept: image/webp,image/apng,image/*,*/*;q=0.8**Referer: http://127.0.0.1:8080/**Accept-Encoding: gzip, deflate, br**Accept-Language: zh-CN,zh;q=0.9,ja;q=0.8,en-US;q=0.7,en;q=0.6****:85
+2018.9.25-22:29:38
+
+ INFO: SEND:example.jpg:85
+2018.9.25-22:29:38
+
+ INFO: Header:HTTP/1.1 200 OK
+Server: Rypers/1.0
+Content-Length: 1249334
+Connection: close
+Content-Type: image/jpg
+
+:85
+2018.9.25-22:29:38
+
+ INFO: Time:write function total Run:2705microseconds.
+:85
+2018.9.25-22:29:38
+
+ INFO: Time:Accept function total Run:209119microseconds.
+:86
+2018.9.25-22:29:38
+
+ INFO: Time:fork functrion total Run:1377microseconds.
+:86
+2018.9.25-22:29:38
+
+ INFO: Time:fork functrion total Run:1682microseconds.
+:86
+2018.9.25-22:29:38
+
+ INFO: Time:read function total Run:323microseconds.
+:86
+2018.9.25-22:29:38
+
+ INFO: request:GET / HTTP/1.1**Host: 127.0.0.1:8080**Connection: keep-alive**Cache-Control: max-age=0**Upgrade-Insecure-Requests: 1**User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36**Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8**Accept-Encoding: gzip, deflate, br**Accept-Language: zh-CN,zh;q=0.9,ja;q=0.8,en-US;q=0.7,en;q=0.6****:86
+2018.9.25-22:29:38
+
+ INFO: SEND:index.html:86
+2018.9.25-22:29:38
+
+ INFO: Header:HTTP/1.1 200 OK
+Server: Rypers/1.0
+Content-Length: 311
+Connection: close
+Content-Type: text/html
+
+:86
+2018.9.25-22:29:38
+
+ INFO: Time:write function total Run:49microseconds.
+:86
+2018.9.25-22:29:38
+
+ INFO: Time:Accept function total Run:26122microseconds.
+:87
+2018.9.25-22:29:38
+
+ INFO: Time:fork functrion total Run:816microseconds.
+:87
+2018.9.25-22:29:38
+
+ INFO: Time:Accept function total Run:31microseconds.
+:88
+2018.9.25-22:29:38
+
+ INFO: Time:fork functrion total Run:1099microseconds.
+:87
+2018.9.25-22:29:38
+
+ INFO: Time:read function total Run:104microseconds.
+:87
+2018.9.25-22:29:38
+
+ INFO: request:GET / HTTP/1.1**Host: 127.0.0.1:8080**Connection: keep-alive**Cache-Control: max-age=0**Upgrade-Insecure-Requests: 1**User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36**Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8**Accept-Encoding: gzip, deflate, br**Accept-Language: zh-CN,zh;q=0.9,ja;q=0.8,en-US;q=0.7,en;q=0.6****:87
+2018.9.25-22:29:38
+
+ INFO: SEND:index.html:87
+2018.9.25-22:29:38
+
+ INFO: Header:HTTP/1.1 200 OK
+Server: Rypers/1.0
+Content-Length: 311
+Connection: close
+Content-Type: text/html
+
+:87
+2018.9.25-22:29:38
+
+ INFO: Time:write function total Run:61microseconds.
+:87
+2018.9.25-22:29:38
+
+ INFO: Time:fork functrion total Run:1052microseconds.
+:88
+2018.9.25-22:29:38
+
+ INFO: Time:fork functrion total Run:1233microseconds.
+:88
+2018.9.25-22:29:38
+
+ INFO: Time:read function total Run:64717microseconds.
+:88
+2018.9.25-22:29:38
+
+ INFO: request:GET /example.jpg HTTP/1.1**Host: 127.0.0.1:8080**Connection: keep-alive**User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36**Accept: image/webp,image/apng,image/*,*/*;q=0.8**Referer: http://127.0.0.1:8080/**Accept-Encoding: gzip, deflate, br**Accept-Language: zh-CN,zh;q=0.9,ja;q=0.8,en-US;q=0.7,en;q=0.6****:88
+2018.9.25-22:29:38
+
+ INFO: SEND:example.jpg:88
+2018.9.25-22:29:38
+
+ INFO: Header:HTTP/1.1 200 OK
+Server: Rypers/1.0
+Content-Length: 1249334
+Connection: close
+Content-Type: image/jpg
+
+:88
+2018.9.25-22:29:38
+
+ INFO: Time:write function total Run:90465microseconds.
+:88
+2018.9.25-22:29:38
+
+ INFO: Time:Accept function total Run:260005microseconds.
+:89
+2018.9.25-22:29:38
+
+ INFO: Time:fork functrion total Run:342microseconds.
+:89
+2018.9.25-22:29:38
+
+2018.9.25-22:29:38
+ INFO: Time:Accept function total Run:11microseconds.
+:90
+
+ INFO: Time:fork functrion total Run:571microseconds.
+:89
+2018.9.25-22:29:38
+
+ INFO: Time:fork functrion total Run:465microseconds.
+:90
+2018.9.25-22:29:38
+
+ INFO: Time:read function total Run:238microseconds.
+:89
+2018.9.25-22:29:38
+
+ INFO: request:GET / HTTP/1.1**Host: 127.0.0.1:8080**Connection: keep-alive**Cache-Control: max-age=0**Upgrade-Insecure-Requests: 1**User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36**Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8**Accept-Encoding: gzip, deflate, br**Accept-Language: zh-CN,zh;q=0.9,ja;q=0.8,en-US;q=0.7,en;q=0.6****:89
+2018.9.25-22:29:38
+
+ INFO: Time:fork functrion total Run:722microseconds.
+:90
+2018.9.25-22:29:38
+
+ INFO: SEND:index.html:89
+2018.9.25-22:29:38
+
+ INFO: Header:HTTP/1.1 200 OK
+Server: Rypers/1.0
+Content-Length: 311
+Connection: close
+Content-Type: text/html
+
+:89
+2018.9.25-22:29:38
+
+ INFO: Time:write function total Run:43microseconds.
+:89
+2018.9.25-22:29:38
+
+ INFO: Time:read function total Run:37428microseconds.
+:90
+2018.9.25-22:29:38
+
+ INFO: request:GET /example.jpg HTTP/1.1**Host: 127.0.0.1:8080**Connection: keep-alive**User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36**Accept: image/webp,image/apng,image/*,*/*;q=0.8**Referer: http://127.0.0.1:8080/**Accept-Encoding: gzip, deflate, br**Accept-Language: zh-CN,zh;q=0.9,ja;q=0.8,en-US;q=0.7,en;q=0.6****:90
+2018.9.25-22:29:38
+
+ INFO: SEND:example.jpg:90
+2018.9.25-22:29:38
+
+ INFO: Header:HTTP/1.1 200 OK
+Server: Rypers/1.0
+Content-Length: 1249334
+Connection: close
+Content-Type: image/jpg
+
+:90
+2018.9.25-22:29:39
+
+ INFO: Time:write function total Run:67455microseconds.
+:90
