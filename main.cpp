@@ -33,6 +33,8 @@ using std::to_string;
 
 
 void logger(int type, const char *s1, const char *s2, int socket_fd) {
+    struct timeval start, end;
+    gettimeofday(&start, NULL);
     int fd;
     char logbuffer[BUFSIZE * 2];
     char time_stamp[BUFSIZE << 1];
@@ -66,11 +68,22 @@ void logger(int type, const char *s1, const char *s2, int socket_fd) {
             (void) sprintf(logbuffer, " INFO: %s:%s:%d", s1, s2, socket_fd);
             break;
     }
+
     /* No checks here, nothing can be done with a failure anyway */
     if ((fd = open("/Users/ryan/CLionProjects/webserver/nweb.log", O_CREAT | O_WRONLY | O_APPEND, 0644)) >= 0) {
         write(fd, time_stamp, strlen(time_stamp));
         write(fd, "\n", 1);
         (void) write(fd, logbuffer, strlen(logbuffer));
+        (void) write(fd, "\n", 1);
+        (void) close(fd);
+    }
+    gettimeofday(&end, NULL);
+    long timeuse = 1000000 * (end.tv_sec - start.tv_sec) + end.tv_usec - start.tv_usec;  //微秒级别
+    string log = "log function total Run:" + to_string(timeuse) + "microseconds.\n";
+    if ((fd = open("/Users/ryan/CLionProjects/webserver/nweb.log", O_CREAT | O_WRONLY | O_APPEND, 0644)) >= 0) {
+        //write(fd, time_stamp, strlen(time_stamp));
+        //write(fd, "\n", 1);
+        (void) write(fd, log.c_str(), log.length());
         (void) write(fd, "\n", 1);
         (void) close(fd);
     }
@@ -84,13 +97,15 @@ void web(int fd, int hit) {
     int j, file_fd, buflen;
     long i, ret, len;
     char *fstr;
+    long readFileTimeuse = 0,writeSocketTimeuse = 0;
+
     static char buffer[BUFSIZE + 1]; /* static so zero filled */
     gettimeofday(&start, NULL);
 
     ret = read(fd, buffer, BUFSIZE);   /* read Web request in one go */
     gettimeofday(&end, NULL);
     timeuse = 1000000 * (end.tv_sec - start.tv_sec) + end.tv_usec - start.tv_usec;  //微秒级别
-    string log = "read function total Run:" + to_string(timeuse) + "microseconds.\n";
+    string log = "read socket function total Run:" + to_string(timeuse) + "microseconds.\n";
     logger(LOG, "Time", log.c_str(), hit);
     if (ret == 0 || ret == -1) {  /* read failure stop now */
         logger(FORBIDDEN, "failed to read browser request", "", fd);
@@ -143,14 +158,25 @@ void web(int fd, int hit) {
     logger(LOG, "Header", buffer, hit);
     gettimeofday(&start, NULL);
     (void) write(fd, buffer, strlen(buffer));
-
-    /* send file in 8KB block - last block may be smaller */
-    while ((ret = read(file_fd, buffer, BUFSIZE)) > 0) {
-        (void) write(fd, buffer, ret);
-    }
     gettimeofday(&end, NULL);
-    timeuse = 1000000 * (end.tv_sec - start.tv_sec) + end.tv_usec - start.tv_usec;  //微秒级别
-    log = "write function total Run:" + to_string(timeuse) + "microseconds.\n";
+    writeSocketTimeuse = 1000000 * (end.tv_sec - start.tv_sec) + end.tv_usec - start.tv_usec;  //微秒级别
+    /* send file in 8KB block - last block may be smaller */
+    while (true) {
+        gettimeofday(&start, NULL);
+        auto tmp = (ret = read(file_fd, buffer, BUFSIZE));
+        gettimeofday(&end, NULL);
+        readFileTimeuse = 1000000 * (end.tv_sec - start.tv_sec) + end.tv_usec - start.tv_usec;  //微秒级别
+
+        if(tmp <= 0)break;
+        gettimeofday(&start, NULL);
+        (void) write(fd, buffer, ret);
+        gettimeofday(&end, NULL);
+        writeSocketTimeuse = 1000000 * (end.tv_sec - start.tv_sec) + end.tv_usec - start.tv_usec;  //微秒级别
+
+    }
+    log = "read file function total Run:" + to_string(readFileTimeuse) + "microseconds.\n";
+    logger(LOG, "Time", log.c_str(), hit);
+    log = "write socket function total Run:" + to_string(writeSocketTimeuse) + "microseconds.\n";
     logger(LOG, "Time", log.c_str(), hit);
     close(fd);
 }
@@ -185,6 +211,7 @@ int main(int argc, char **argv) {
     if (listen(listenfd, 64) < 0)
         logger(ERROR, "system call", "listen", 0);
     //shared
+    /*
     sem_t* psem;
     if((psem=sem_open("sem_example",O_CREAT,0666,1))==SEM_FAILED)
     {
@@ -204,50 +231,51 @@ int main(int argc, char **argv) {
         perror("create mmap error");
         exit(1);
     }
-    *(clock_t*)memPtr=0;
+
+    *(clock_t*)memPtr=0;*/
     //end shared
     struct timeval start, end;
     long timeuse = 0;
     for (hit = 1;; ++hit) {
         length = sizeof(cli_addr);
-        gettimeofday(&start, NULL);
+        //gettimeofday(&start, NULL);
         if ((socketfd = accept(listenfd, (struct sockaddr *) &cli_addr, &length)) < 0)
             logger(ERROR, "system call", "accept", 0);
-        gettimeofday(&end, NULL);
-        timeuse = 1000000 * (end.tv_sec - start.tv_sec) + end.tv_usec - start.tv_usec;  //微秒级别
-        string log = "Accept function total Run:" + to_string(timeuse) + "microseconds.\n";
-        logger(LOG, "Time", log.c_str(), hit);
-        gettimeofday(&start, NULL);
+        //gettimeofday(&end, NULL);
+        //timeuse = 1000000 * (end.tv_sec - start.tv_sec) + end.tv_usec - start.tv_usec;  //微秒级别
+        //string log = "Accept function total Run:" + to_string(timeuse) + "microseconds.\n";
+        //logger(LOG, "Time", log.c_str(), hit);
+        //gettimeofday(&start, NULL);
         pid = fork();
-        gettimeofday(&end,NULL);
-        timeuse = 1000000 * (end.tv_sec - start.tv_sec) + end.tv_usec - start.tv_usec;  //微秒级别
-        log = "fork functrion total Run:" + to_string(timeuse) + "microseconds.\n";
-        logger(LOG, "Time", log.c_str(), hit);
+        //gettimeofday(&end,NULL);
+        //timeuse = 1000000 * (end.tv_sec - start.tv_sec) + end.tv_usec - start.tv_usec;  //微秒级别
+        //log = "fork functrion total Run:" + to_string(timeuse) + "microseconds.\n";
+        //logger(LOG, "Time", log.c_str(), hit);
         if (pid < 0) {
             logger(ERROR, "system call", "fork", 0);
         } else {
             if (pid == 0) {   /* child */
-                auto mstart = clock();
+                //auto mstart = clock();
                 (void) close(listenfd);
-                gettimeofday(&start, NULL);
+                //gettimeofday(&start, NULL);
                 web(socketfd, hit); /* never returns */
-                auto mfinish = clock();
-                sem_wait(psem);
-                *(clock_t*)memPtr = (*(clock_t*)memPtr) + mfinish - mstart;
-                sem_post(psem);
-                gettimeofday(&end, NULL);
-                timeuse = 1000000 * (end.tv_sec - start.tv_sec) + end.tv_usec - start.tv_usec;  //微秒级别
-                log = "Web total Run:" + to_string(timeuse) + "microseconds.\n";
-                logger(LOG, "Time", log.c_str(), hit);
-                char childbuffer[BUFSIZE * 4];
-                int fdd;
-                (void)sprintf(childbuffer,"Child timing%f seconds\nChild total timing:%f seconds\n",(double)(mfinish-mstart)/\
-                CLOCKS_PER_SEC,(double)(*(clock_t*)memPtr)/CLOCKS_PER_SEC);
-                if ((fdd=open("/Users/ryan/CLionProjects/webserver/time.log",O_CREAT|O_WRONLY|O_APPEND,0644))>=0){
-                    (void)write(fdd,childbuffer,strlen(childbuffer));
-                    (void)write(fdd,"\n",1);
-                    (void)close(fdd);
-                }
+                //auto mfinish = clock();
+                //sem_wait(psem);
+                //*(clock_t*)memPtr = (*(clock_t*)memPtr) + mfinish - mstart;
+                //sem_post(psem);
+                //gettimeofday(&end, NULL);
+                //timeuse = 1000000 * (end.tv_sec - start.tv_sec) + end.tv_usec - start.tv_usec;  //微秒级别
+                //log = "Web total Run:" + to_string(timeuse) + "microseconds.\n";
+                //logger(LOG, "Time", log.c_str(), hit);
+                //char childbuffer[BUFSIZE * 4];
+                //int fdd;
+                //(void)sprintf(childbuffer,"Child timing%f seconds\nChild total timing:%f seconds\n",(double)(mfinish-mstart)/\
+                //CLOCKS_PER_SEC,(double)(*(clock_t*)memPtr)/CLOCKS_PER_SEC);
+                //if ((fdd=open("/Users/ryan/CLionProjects/webserver/time.log",O_CREAT|O_WRONLY|O_APPEND,0644))>=0){
+                //    (void)write(fdd,childbuffer,strlen(childbuffer));
+                //    (void)write(fdd,"\n",1);
+                //   (void)close(fdd);
+                //}
                 exit(0);
             } else {   /* parent */
                 (void) close(socketfd);
