@@ -13,9 +13,19 @@
 #include <netinet/in.h>
 #include <arpa/inet.h>
 #include <pthread.h>
+#include <iostream>
 #include <sys/stat.h>
 #include <sys/prctl.h>
 #include <stdbool.h>
+#include <sys/time.h>
+
+#include "include/stlcache/stlcache.hpp"
+using namespace stlcache;
+using std::string;
+using std::cin;
+using std::cout;
+using std::cerr;
+using std::to_string;
 #define VERSION 23
 #define BUFSIZE 8096
 #define ERROR      42
@@ -43,10 +53,17 @@ struct {
         {"html","text/html" },
         {0,0} };
 
-typedef struct{
+typedef struct webparam{
     int hit;
-    int fd;
+    int socketfd;
 }webparam;
+
+struct CacheItem{
+    string content;
+    size_t size;
+    CacheItem(){}
+};
+
 
 /***************thread pool****************/
 /*queue status and conditional variable*/
@@ -89,16 +106,16 @@ typedef struct threadpool
 }threadpool;
 
 /*Thread*/
-typedef struct thread
+struct thread
 {
     int id;
     pthread_t pthread;
     threadpool* pool;
-}thread;
+};
 
 
 
-void* thread_do(void* pthread);
+void* thread_do(void* _thread_p);
 void init_taskqueue(taskqueue* queue);
 void push_taskqueue(taskqueue* queue,task* curtask);
 task* take_taskqueue(taskqueue* queue);
@@ -119,27 +136,28 @@ int rem(char *str)
         (void)write(fdd,"\n",1);
         (void)close(fdd);
     }
+    return 0;
 }
 void init_taskqueue(taskqueue* queue)
 {
 
-    pthread_mutex_init(&(queue->mutex),NULL);
+    pthread_mutex_init(&(queue->mutex), nullptr);
 
-    queue->front = NULL;
-    queue->rear = NULL;
+    queue->front = nullptr;
+    queue->rear = nullptr;
     queue->has_jobs = (staconv*)malloc(sizeof(staconv));
     queue->has_jobs->status = false;
 
     queue->len = 0;
 
-    pthread_mutex_init(&(queue->has_jobs->mutex),NULL);
-    pthread_cond_init(&(queue->has_jobs->cond),NULL);
+    pthread_mutex_init(&(queue->has_jobs->mutex), nullptr);
+    pthread_cond_init(&(queue->has_jobs->cond), nullptr);
 }
 
 void push_taskqueue(taskqueue* queue,task* curtask)
 {
     pthread_mutex_lock (&(queue->mutex));
-    curtask->next = NULL;
+    curtask->next = nullptr;
     if (queue->len == 0)
     {
         queue->rear=curtask;
@@ -147,24 +165,23 @@ void push_taskqueue(taskqueue* queue,task* curtask)
     }
     else
     {
-        queue->has_jobs->status=1;
+        queue->has_jobs->status= true;
         queue->rear->next = curtask;
         queue->rear = curtask;
     }
     //assert (queue->front != NULL);
     queue->len++;
-    if(queue->has_jobs->status == false)
+    if(!queue->has_jobs->status)
     {
         queue->has_jobs->status = true;
     }
     pthread_cond_signal (&(queue->has_jobs->cond));
     pthread_mutex_unlock (&(queue->mutex));
-    return ;
 }
 
 task* take_taskqueue(taskqueue* queue)
 {
-    while(queue->has_jobs->status == false)
+    while(!queue->has_jobs->status)
     {
         pthread_cond_wait(&(queue->has_jobs->cond),&(queue->mutex));
     }
@@ -180,7 +197,7 @@ task* take_taskqueue(taskqueue* queue)
 void destory_taskqueue(taskqueue* queue)
 {
     task* head;
-    while(queue->front != NULL)
+    while(queue->front != nullptr)
     {
         head = queue->front;
         queue->front = queue->front->next;
@@ -189,14 +206,13 @@ void destory_taskqueue(taskqueue* queue)
     pthread_mutex_destroy(&(queue->has_jobs->mutex));
     pthread_cond_destroy(&(queue->has_jobs->cond));
     pthread_mutex_destroy(&(queue->mutex));
-    return ;
 }
 
 int create_thread(threadpool* pool,thread* pthread,int id)
 {
     //为thread分配空间
     pthread = (thread*)malloc(sizeof(thread));
-    if(pthread == NULL)
+    if(pthread == nullptr)
     {
         perror("creat_thread():Couldn't allocate memory for thread\n");
         return -1;
@@ -205,7 +221,7 @@ int create_thread(threadpool* pool,thread* pthread,int id)
     (pthread)->pool = pool;
     (pthread)->id = id;
     //创建线程
-    pthread_create(&((pthread)->pthread),NULL,thread_do,(pthread));
+    pthread_create(&((pthread)->pthread), nullptr,&thread_do,(pthread));
     pthread_detach((pthread)->pthread);
     return 0;
 }
@@ -220,8 +236,8 @@ threadpool* initThreadPool(int num_threads)
     pool->is_alive = true;
 
     //初始化互斥量和条件变量
-    pthread_mutex_init(&(pool->thcount_lock),NULL);
-    pthread_cond_init(&(pool->threads_all_idle),NULL);
+    pthread_mutex_init(&(pool->thcount_lock), nullptr);
+    pthread_cond_init(&(pool->threads_all_idle), nullptr);
 
     //初始化任务队列
     init_taskqueue(&pool->queue);
@@ -279,7 +295,7 @@ int getNumofThreadWorking(threadpool* pool)
 void* thread_do(void* _thread_p)
 {
     /*设置线程名字*/
-    thread* thread_p = (thread*)_thread_p;
+    auto * thread_p = (thread*) _thread_p;
     char thread_name[128] = {0};
     sprintf(thread_name,"thread-pool-%d",thread_p->id);
     prctl(PR_SET_NAME,thread_name);
@@ -296,7 +312,7 @@ void* thread_do(void* _thread_p)
         /*如果任务队列还有任务，则继续运行，否则阻塞*/
         //waitThreadPool(pool);
         pthread_mutex_lock(&(pool->thcount_lock));
-        while(queue->has_jobs->status == false && pool->is_alive)
+        while(!queue->has_jobs->status && pool->is_alive)
         {
             pthread_cond_wait(&(queue->has_jobs->cond),&(pool->thcount_lock));
         }
@@ -331,7 +347,7 @@ void* thread_do(void* _thread_p)
     pthread_mutex_lock(&(pool->thcount_lock));
     (pool->num_threads)--;
     pthread_mutex_unlock(&(pool->thcount_lock));
-    return NULL;
+    return nullptr;
 }
 /***************thread pool****************/
 
@@ -339,8 +355,8 @@ void* thread_do(void* _thread_p)
 
 unsigned long get_file_size(const char *path)
 {
-    unsigned long filesize = -1;
-    struct stat statbuff;
+    unsigned long filesize = static_cast<unsigned long>(-1);
+    struct stat statbuff{};
     if(stat(path, &statbuff) < 0){
         return filesize;
     }else{
@@ -349,7 +365,7 @@ unsigned long get_file_size(const char *path)
     return filesize;
 }
 
-void logger(int type, char *s1, char *s2, int socket_fd)
+void logger(int type, const char *s1, const char *s2, int socket_fd)
 {
     int fd ;
     char logbuffer[BUFSIZE*2];
@@ -365,6 +381,7 @@ void logger(int type, char *s1, char *s2, int socket_fd)
             (void)sprintf(logbuffer,"NOT FOUND: %s:%s",s1, s2);
             break;
         case LOG: (void)sprintf(logbuffer," INFO: %s:%s:%d",s1, s2,socket_fd); break;
+        default:break;
     }
     /* No checks here, nothing can be done with a failure anyway */
     if((fd = open("nweb.log", O_CREAT| O_WRONLY | O_APPEND,0644)) >= 0) {
@@ -376,80 +393,115 @@ void logger(int type, char *s1, char *s2, int socket_fd)
 }
 
 /* this is a web thread, so we can exit on errors */
-void* web(void* data)
-{
+constexpr size_t CACHE_SIZE = 1 << 8;
+//lru_cache_t<string,CacheItem>cache(CACHE_SIZE);
+cache<string,CacheItem,policy_adaptive>lfuCache(CACHE_SIZE);
+/* this is a child web server process, so we can exit on errors */
+void* web(void* webparams) {
     int fd,hit;
+    fd = ((struct webparam*)webparams)->socketfd;
+    hit = ((struct webparam*)webparams)->hit;
+    struct timeval start{}, end{};
+    long timeuse = 0;
     int j, file_fd, buflen;
     long i, ret, len;
-    char * fstr;
-    char buffer[BUFSIZE+1]; /* static so zero filled */
-    webparam *param=(webparam*)data;
-    fd=param->fd;
-    hit=param->hit;
+    char *fstr;
+    long readFileTimeuse = 0,writeSocketTimeuse = 0;
 
-    ret =read(fd,buffer,BUFSIZE);   /* read Web request in one go */
-    if(ret == 0 || ret == -1) {  /* read failure stop now */
-        logger(FORBIDDEN,"failed to read browser request","",fd);
+    static char buffer[BUFSIZE + 1]; /* static so zero filled */
+    gettimeofday(&start, nullptr);
+
+    ret = read(fd, buffer, BUFSIZE);   /* read Web request in one go */
+    gettimeofday(&end, nullptr);
+    timeuse = 1000000 * (end.tv_sec - start.tv_sec) + end.tv_usec - start.tv_usec;  //微秒级别
+    string log = "read socket function total Run:" + to_string(timeuse) + "microseconds.\n";
+    logger(LOG, "Time", log.c_str(), hit);
+    if (ret == 0 || ret == -1) {  /* read failure stop now */
+        logger(FORBIDDEN, "failed to read browser request", "", fd);
     }
-    else{
-        if(ret > 0 && ret < BUFSIZE)  /* return code is valid chars */
-            buffer[ret]=0;    /* terminate the buffer */
-        else buffer[0]=0;
-        for(i=0;i<ret;i++)  /* remove CF and LF characters */
-            if(buffer[i] == '\r' || buffer[i] == '\n')
-                buffer[i]='*';
-
-        logger(LOG,"request",buffer,hit);
-        if( strncmp(buffer,"GET ",4) && strncmp(buffer,"get ",4) ) {
-            logger(FORBIDDEN,"Only simple GET operation supported",buffer,fd);
+    if (ret > 0 && ret < BUFSIZE)  /* return code is valid chars */
+        buffer[ret] = 0;    /* terminate the buffer */
+    else buffer[0] = 0;
+    for (i = 0; i < ret; i++)  /* remove CF and LF characters */
+        if (buffer[i] == '\r' || buffer[i] == '\n')
+            buffer[i] = '*';
+    logger(LOG, "request", buffer, hit);
+    if (strncmp(buffer, "GET ", 4) && strncmp(buffer, "get ", 4)) {
+        logger(FORBIDDEN, "Only simple GET operation supported", buffer, fd);
+    }
+    for (i = 4; i < BUFSIZE; i++) { /* null terminate after the second space to ignore extra stuff */
+        if (buffer[i] == ' ') { /* string is "GET URL " +lots of other stuff */
+            buffer[i] = 0;
+            break;
         }
-        for(i=4;i<BUFSIZE;i++) { /* null terminate after the second space to ignore extra stuff */
-            if(buffer[i] == ' ') { /* string is "GET URL " +lots of other stuff */
-                buffer[i] = 0;
-                break;
-            }
+    }
+    for (j = 0; j < i - 1; j++)   /* check for illegal parent directory use .. */
+        if (buffer[j] == '.' && buffer[j + 1] == '.') {
+            logger(FORBIDDEN, "Parent directory (..) path names not supported", buffer, fd);
         }
-        for(j=0;j<i-1;j++)   /* check for illegal parent directory use .. */
-            if(buffer[j] == '.' && buffer[j+1] == '.') {
-                logger(FORBIDDEN,"Parent directory (..) path names not supported",buffer,fd);
-            }
-        if( !strncmp(&buffer[0],"GET /\0",6) || !strncmp(&buffer[0],"get /\0",6) ) /* convert no filename to index file */
-            (void)strcpy(buffer,"GET /index.html");
+    if (!strncmp(&buffer[0], "GET /\0", 6) ||
+        !strncmp(&buffer[0], "get /\0", 6)) /* convert no filename to index file */
+        (void) strcpy(buffer, "GET /index.html");
 
-        /* work out the file type and check we support it */
-        buflen=strlen(buffer);
-        fstr = (char *)0;
-        for(i=0;extensions[i].ext != 0;i++) {
-            len = strlen(extensions[i].ext);
-            if( !strncmp(&buffer[buflen-len], extensions[i].ext, len)) {
-                fstr =extensions[i].filetype;
-                break;
-            }
+    /* work out the file type and check we support it */
+    buflen = static_cast<int>(strlen(buffer));
+    fstr = (char *) 0;
+    for (i = 0; extensions[i].ext != 0; i++) {
+        len = strlen(extensions[i].ext);
+        if (!strncmp(&buffer[buflen - len], extensions[i].ext, static_cast<size_t>(len))) {
+            fstr = extensions[i].filetype;
+            break;
         }
-
-        if(fstr == 0) logger(FORBIDDEN,"file extension type not supported",buffer,fd);
-
-        if(( file_fd = open(&buffer[5],O_RDONLY)) == -1) {  /* open the file for reading */
-            logger(NOTFOUND, "failed to open file",&buffer[5],fd);
+    }
+    if (fstr == nullptr) logger(FORBIDDEN, "file extension type not supported", buffer, fd);
+    string file_name(buffer + 5);
+    if(lfuCache.check(file_name)) {
+        gettimeofday(&start, nullptr);
+        auto cacheItem = lfuCache.fetch(file_name);
+        logger(LOG, "SEND", file_name.c_str(), hit);
+        len = cacheItem.size;
+        sprintf(buffer,
+                "HTTP/1.1 200 OK\nServer: Rypers/%d.0\nContent-Length: %ld\nConnection: close\nContent-Type: %s\n\n",
+                VERSION, len, fstr);
+        logger(LOG, "Header", buffer, hit);
+        write(fd, buffer, strlen(buffer));
+        write(fd, cacheItem.content.c_str(),cacheItem.content.length());
+        gettimeofday(&end, nullptr);
+        auto cacheTimeUsed = 1000000 * (end.tv_sec - start.tv_sec) + end.tv_usec - start.tv_usec;  //微秒级别
+        log = "arc Cache Used " + to_string(cacheTimeUsed) + "microseconds.\n";
+        logger(LOG, "Time",log.c_str(),hit);
+    }
+    else {
+        gettimeofday(&start, nullptr);
+        string storeContent;
+        if ((file_fd = open(&buffer[5], O_RDONLY)) == -1) {  /* open the file for reading */
+            logger(NOTFOUND, "failed to open file", &buffer[5], fd);
         }
-        logger(LOG,"SEND",&buffer[5],hit);
-
-        len = (long)lseek(file_fd, (off_t)0, SEEK_END); /* lseek to the file end to find the length */
-        (void)lseek(file_fd, (off_t)0, SEEK_SET); /* lseek back to the file start ready for reading */
-        (void)sprintf(buffer,"HTTP/1.1 200 OK\nServer: nweb/%d.0\nContent-Length: %ld\nConnection: close\nContent-Type: %s\n\n", VERSION, len, fstr); /* Header + a blank line */
-
-        logger(LOG,"Header",buffer,hit);
-        (void)write(fd,buffer,strlen(buffer));
-
+        logger(LOG, "SEND", &buffer[5], hit);
+        len = get_file_size(&buffer[5]); /* lseek to the file end to find the length */
+        //(void) lseek(file_fd, (off_t) 0, SEEK_SET); /* lseek back to the file start ready for reading */
+        (void) sprintf(buffer,
+                       "HTTP/1.1 200 OK\nServer: Rypers/%d.0\nContent-Length: %ld\nConnection: close\nContent-Type: %s\n\n",
+                       VERSION, len, fstr); /* Header + a blank line */
+        logger(LOG, "Header", buffer, hit);
         /* send file in 8KB block - last block may be smaller */
-        while (  (ret = read(file_fd, buffer, BUFSIZE)) > 0 ) {
-            (void)write(fd,buffer,ret);
+        while (true) {
+            auto tmp = (ret = read(file_fd, buffer, BUFSIZE));
+            if (tmp <= 0)break;
+            storeContent += buffer;
+            (void) write(fd, buffer, static_cast<size_t>(ret));
         }
-        usleep(10000);  /* allow socket to drain before signalling the socket is closed */
-        close(file_fd);
+        gettimeofday(&end, nullptr);
+        auto noneCacheTimeUsed = 1000000 * (end.tv_sec - start.tv_sec) + end.tv_usec - start.tv_usec;  //微秒级别
+        log = "noneCacheTime Used:" + to_string(noneCacheTimeUsed) + " microseconds.\n";
+        logger(LOG, "Time", log.c_str(), hit);
+        CacheItem newCacheItem;
+        newCacheItem.content = storeContent;
+        newCacheItem.size = static_cast<size_t>(len);
+        lfuCache.insert(file_name,newCacheItem);
     }
+    free(webparams);
     close(fd);
-    free(param);
 }
 int main(int argc, char **argv)
 {
@@ -465,7 +517,7 @@ int main(int argc, char **argv)
                      "\tThere is no fancy features = safe and secure.\n\n"
                      "\tExample: nweb 8181 /home/nwebdir &\n\n"
                      "\tOnly Supports:", VERSION);
-        for(i=0;extensions[i].ext != 0;i++)
+        for(i=0;extensions[i].ext != nullptr;i++)
             (void)printf(" %s",extensions[i].ext);
         (void)printf("\n\tNot Supported: URLs including \"..\", Java, Javascript, CGI\n"
                      "\tNot Supported: directories / /etc /bin /lib /tmp /usr /dev /sbin \n"
@@ -501,7 +553,7 @@ int main(int argc, char **argv)
 
     serv_addr.sin_family = AF_INET;
     serv_addr.sin_addr.s_addr = htonl(INADDR_ANY);
-    serv_addr.sin_port = htons(port);
+    serv_addr.sin_port = htons(static_cast<uint16_t>(port));
 
     struct threadpool* pool = initThreadPool(50);
     if(bind(listenfd, (struct sockaddr *)&serv_addr,sizeof(serv_addr)) <0)
@@ -522,7 +574,7 @@ int main(int argc, char **argv)
         webparam *param = (webparam*)malloc(sizeof(webparam));
         rem("#");
         param->hit = hit;
-        param->fd = socketfd;
+        param->socketfd = socketfd;
         struct task* ltask = (task*)malloc(sizeof(struct task));
         rem("#");
         ltask->function = &web;
@@ -533,4 +585,3 @@ int main(int argc, char **argv)
     }
     return 0;
 }
-
